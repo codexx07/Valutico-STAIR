@@ -1,10 +1,32 @@
-.NavBar {
-    width: 250px; /* Fixed sidebar width */
-    height: 100vh; /* Full viewport height */
-    background-color: #333; /* Dark background */
-    color: white;
-    padding: 10px;
-  }
-  
-  /* Add styles for your navigation items here */
-  
+.sidebar {
+  width: 80px; /* Adjust width as needed */
+  height: 100vh;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; /* Space at the top */
+}
+
+.logo {
+  margin-bottom: 40px; /* Space below the logo */
+  /* Add styles for your logo here */
+}
+
+.menu-item {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  /* Add styles for icons if necessary */
+}
+
+.menu-item:not(:last-child) {
+  margin-bottom: 20px; /* Space between menu items */
+}
+
+/* Add hover effects for menu items */
+.menu-item:hover {
+  background-color: #333; /* Darker background on hover */
+}
