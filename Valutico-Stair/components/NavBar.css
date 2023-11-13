@@ -1,0 +1,10 @@
+.NavBar {
+    width: 250px; /* Fixed sidebar width */
+    height: 100vh; /* Full viewport height */
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Add styles for your navigation items here */
+  

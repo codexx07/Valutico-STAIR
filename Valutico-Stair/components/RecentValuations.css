@@ -1,0 +1,23 @@
+.RecentValuations {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .valuations-cards {
+    display: flex;
+    gap: 15px; /* Space between cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  
+  .valuation-card {
+    flex: 0 0 auto; /* Do not grow or shrink, but can be basis */
+    padding: 15px;
+    background-color: #f9f9f9; /* Slightly off-white background */
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Fixed width for cards */
+  }
+  

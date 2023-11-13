@@ -1,0 +1,18 @@
+.SearchBar {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px; /* Spacing between search bar and content below */
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .SearchBar input {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    margin-right: 10px; /* Spacing between input and search icon */
+  }
+  
