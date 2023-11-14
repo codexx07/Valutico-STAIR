@@ -2,11 +2,16 @@
   display: flex;
   font-family: 'Arial', sans-serif;
   background-color: black;
+  min-height: 100vh; /* Ensure full vertical height */
 }
 
 .content {
   flex-grow: 1;
   padding: 20px;
-  background-color: #0000002E; /* Light grey background */
+  margin-left: 83px; /* Same as the sidebar width */
+  background-color: #0000002E; /* Semi-transparent black */
+  /* If you want padding-top to be the same as the sidebar's padding */
+  padding-top: 20px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: auto; /* Enable vertical scroll if content is taller than the screen */
 }
-

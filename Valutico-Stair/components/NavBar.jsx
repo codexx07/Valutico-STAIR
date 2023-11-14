@@ -48,7 +48,6 @@ function NavBar() {
       <div className="Support-text">
         <span>Profile</span>
       </div>
-      {/* ... other navbar items */}
     </div>
   );
 }

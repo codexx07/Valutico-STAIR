@@ -9,12 +9,14 @@ import RecentValuations from '../components/RecentValuations';
 function App() {
   return (
     <div className="App">
+      {/* <Sidebar /> */}
       <NavBar />
       <div className="content">
         <SearchBar />
         <Dashboard />
         <Tools />
         <RecentValuations />
+        {/* <Sidebar /> */}
       </div>
     </div>
   );

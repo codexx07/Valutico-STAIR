@@ -1,18 +1,22 @@
 .navbar {
   background: #000000; /* Black background */
-  width: 83px; /* Adjusted width */
+  width: 83px; /* Adjusted width to fit your design */
   height: 100vh; /* Full height */
-  border-radius: 50px; /* Rounded corners */
   padding: 20px 0; /* Padding at top and bottom */
-  box-sizing: border-box; /* Border included in width and height */
+  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
   display: flex;
   flex-direction: column;
   align-items: center; /* Center items horizontally */
   justify-content: start; /* Align items to start vertically */
   position: fixed; /* Fixed position to stay in view */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
   overflow: hidden; /* Hide overflow */
   z-index: 100; /* High z-index to stay above other content */
+  border-radius: 0; /* Remove any rounded corners for a straight edge */
 }
+
+
 
 .navbar .logo {
   margin-bottom: 30px; /* Space below the logo */
@@ -56,4 +60,40 @@
 /* Add a focus style for accessibility */
 .navbar-item:focus {
   outline: 2px solid white;
+}
+
+.inner-navbar {
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background for the inner navbar */
+  width: 60px; /* Width of the inner navbar */
+  height: 80%; /* Height set to 80% of the parent navbar */
+  position: absolute; /* Positioning inside the parent navbar */
+  right: -60px; /* Positioning the inner navbar to the right outside of the parent navbar */
+  top: 10%; /* Positioning from the top for some spacing */
+  border-radius: 30px; /* Rounded corners for the inner navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: start; /* Align items to start vertically */
+  padding: 10px 0; /* Padding at top and bottom */
+  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+.inner-navbar-item {
+  width: 40px; /* Width of items */
+  height: 40px; /* Height of items */
+  margin: 5px 0; /* Space between items */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content */
+  cursor: pointer;
+}
+
+.inner-navbar-item img {
+  width: 25px; /* Width of icons */
+  height: 25px; /* Height of icons */
+}
+
+/* If you need hover effects */
+.inner-navbar-item:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
