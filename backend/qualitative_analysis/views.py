@@ -6,8 +6,11 @@ from .serializers import QASerializer
 
 @api_view(['GET'])
 def getQA(requesst):
-    app = Qualitative_Analysis.objects.all()
-    serialiser = QASerializer(app, many=True)
+    company_name = requesst.GET.get('company_name', '')
+    # print(company_name)
+    company = Qualitative_Analysis.objects.get(company_id__name=company_name)
+    print(company)
+    serialiser = QASerializer(company, many=False)
     return Response(serialiser.data)
     
 @api_view(['POST'])
