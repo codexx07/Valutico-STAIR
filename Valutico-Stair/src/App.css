@@ -1,10 +1,12 @@
 .App {
   display: flex;
   font-family: 'Arial', sans-serif;
+  background-color: black;
 }
 
 .content {
   flex-grow: 1;
   padding: 20px;
-  background-color: #f5f5f5; /* Light grey background */
+  background-color: #0000002E; /* Light grey background */
 }
+

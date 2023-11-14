@@ -10,11 +10,11 @@ function Dashboard() {
 
   return (
     <div className="Dashboard">
-      <h2>Dashboard</h2>
+      <h2 style={{ color: '#fff', fontFamily: '"Inter-Bold", sans-serif', fontSize: '20px' }}>Dashboard</h2>
       {dashboardItems.map(item => (
         <div key={item.name} className="dashboard-item">
           <span>{item.name}</span>
-          <span>{item.change}</span>
+          <span className="change">{item.change}</span>
           {/* Add arrow icon */}
         </div>
       ))}

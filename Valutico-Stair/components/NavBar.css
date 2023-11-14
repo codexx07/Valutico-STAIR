@@ -1,32 +1,59 @@
-.sidebar {
-  width: 80px; /* Adjust width as needed */
-  height: 100vh;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+.navbar {
+  background: #000000; /* Black background */
+  width: 83px; /* Adjusted width */
+  height: 100vh; /* Full height */
+  border-radius: 50px; /* Rounded corners */
+  padding: 20px 0; /* Padding at top and bottom */
+  box-sizing: border-box; /* Border included in width and height */
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: start; /* Align items to start vertically */
+  position: fixed; /* Fixed position to stay in view */
+  overflow: hidden; /* Hide overflow */
+  z-index: 100; /* High z-index to stay above other content */
+}
+
+.navbar .logo {
+  margin-bottom: 30px; /* Space below the logo */
+}
+
+.navbar-item {
+  background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+  border-radius: 50%; /* Circular items */
+  width: 45px; /* Width of items */
+  height: 45px; /* Height of items */
+  margin: 10px 0; /* Space between items */
+  display: flex;
   align-items: center;
-  padding-top: 20px; /* Space at the top */
-}
-
-.logo {
-  margin-bottom: 40px; /* Space below the logo */
-  /* Add styles for your logo here */
-}
-
-.menu-item {
-  width: 100%;
-  padding: 10px 0;
-  text-align: center;
+  justify-content: center; /* Center content */
   cursor: pointer;
-  /* Add styles for icons if necessary */
+  position: relative; /* Position relative for absolute positioning of child elements */
 }
 
-.menu-item:not(:last-child) {
-  margin-bottom: 20px; /* Space between menu items */
+.navbar-item img {
+  width: 30px; /* Width of icons */
+  height: auto; /* Maintain aspect ratio */
+  /* Adjust the following margin if you need more space between the icon and the text */
+  margin-right: 0px; /* Space between the icon and the text */
 }
 
-/* Add hover effects for menu items */
-.menu-item:hover {
-  background-color: #333; /* Darker background on hover */
+.navbar-item span.support-text {
+  color: white; /* Ensures the text is white */
+  position: absolute; /* Takes the element out of the normal flow and positions it relative to the navbar-item */
+  left: 55px; /* Adjust as needed to create space between the icon and text */
+  top: 50%; /* Aligns the top edge of the element with the vertical middle of the navbar-item */
+  transform: translateY(-50%); /* Centers the text vertically relative to the navbar-item */
+  white-space: nowrap; /* Ensures the text does not wrap to the next line */
+  display: block; /* Changes the span from inline to block-level, enabling width and height adjustments */
+}
+
+/* Adjustments for hover effects */
+.navbar-item:hover {
+  background: rgba(255, 255, 255, 0.3); /* Darker on hover */
+}
+
+/* Add a focus style for accessibility */
+.navbar-item:focus {
+  outline: 2px solid white;
 }
