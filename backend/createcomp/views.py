@@ -11,7 +11,6 @@ def getCompany(request):
     
     app = Company.objects.all()
     serialiser = CompanySerializer(app, many=True)
-    print(app[0])
     return Response(serialiser.data)
     
 @api_view(['POST'])
