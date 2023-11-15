@@ -1,9 +1,11 @@
 .SearchBar {
   background-color: #252525; /* Dark background color */
   padding: 10px; /* Reduced padding */
-  border-radius: 8px; /* Slightly rounded corners */
+  border-radius: 50px; /* Fully rounded corners */
   display: flex;
   align-items: center; /* Vertically align items */
+  width: 1320px;
+  margin-left: 20px; /* Adjust the width to make it shorter */
 }
 
 .SearchBar input {
@@ -23,5 +25,5 @@
 .SearchBar .search-icon {
   color: #fff; /* Icon color */
   font-size: 24px; /* Icon size */
-  margin-right: 10px; /* Spacing between input and icon */
+  margin-left: 10px; /* Spacing between input and icon (moved to the left) */
 }

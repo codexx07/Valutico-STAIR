@@ -20,34 +20,46 @@ function NavBar() {
       <button className="navbar-item" onClick={() => handleClick('add-files')}>
         <img src="../src/assets/Plus Math.png" alt="Add Files" />
       </button>
-      <div className="Support-text">
-        <span>Add Files...</span>
-      </div>
+        <span className="Support-text">Add Files...</span>
+        <br></br>
       <button className="navbar-item" onClick={() => handleClick('compare')}>
         <img src="../src/assets/Compare.png" alt="Compare" />
       </button>
-      <div className="Support-text">
-        <span>Compare Files...</span>
-      </div>
+        <span className="Support-text">Compare Files...</span>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
       {/* ... other navbar items */}
       <button className="navbar-item" onClick={() => handleClick('help')}>
         <img src="../src/assets/Help.png" alt="Help" />
       </button>
-      <div className="Support-text">
-        <span>Help</span>
-      </div>
+        <span className="Support-text">Help</span>
+        <br></br>
       <button className="navbar-item" onClick={() => handleClick('info')}>
         <img src="../src/assets/Info.png" alt="Info" />
       </button>
-      <div className="Support-text">
-        <span>Info</span>
-      </div>
+        <span className="Support-text">Info</span>
+        <br></br>
       <button className="navbar-item" onClick={() => handleClick('profile')}>
-        <img src="../src/assets/Chat.png" alt="Profile" />
+        <img src="../src/assets/Customer.png" alt="Profile" />
       </button>
-      <div className="Support-text">
-        <span>Profile</span>
-      </div>
+        <span className="Support-text">Profile</span>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+      <button className="navbar-item" onClick={() => handleClick('profile')}>
+      <img src="../src/assets/Chat.png" alt="Profile" />
+      </button>
+      <span className="Support-text">Chat</span>
     </div>
   );
 }

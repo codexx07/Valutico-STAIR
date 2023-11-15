@@ -1,6 +1,6 @@
 // Tools.js
 import React, { useState } from 'react';
-import './Tools.css';
+import './ToolPrompts.css';
 import ToolPrompt from './ToolPrompt'; // Import the ToolPrompt component
 
 // Import your images here
@@ -8,33 +8,27 @@ import PrivateMarketsImage from '../src/assets/Rectangle 9.png'; // Replace with
 import PublicMarketsImage from '../src/assets/Rectangle 10.png';
 
 function Tools() {
-  // Tool data without images
+  const [activeTool, setActiveTool] = useState(null);
+
+  // Your tools data with images
   const tools = [
     { name: 'Private Markets', description: 'Create new private company valuation', image: PrivateMarketsImage },
-    { name: 'Public Markets', description: 'Create new public company valuation', image: PublicMarketsImage }
+    { name: 'Public Markets', description: 'Create new public company valuation', image: PublicMarketsImage },
     // Add more tools as necessary
   ];
 
-  const [activeTool, setActiveTool] = useState(null);
-
   const handleToolClick = (toolName) => {
-    console.log(`Clicked on tool: ${toolName}`);
-    // Implement your click handling logic here
-
-    // Open the prompt for the clicked tool
     setActiveTool(toolName);
   };
 
   const handlePromptClose = () => {
-    // Close the prompt
     setActiveTool(null);
   };
 
   const handleFormSubmit = (formData) => {
-    // Handle form submission here
-    console.log(`Submitted data for tool: ${activeTool}`);
-    console.log(`Name: ${formData.name}, Age: ${formData.age}, Gender: ${formData.gender}`);
-    // Implement your logic to submit the data or perform other actions
+    console.log('Form data:', formData);
+    // Handle the form data, e.g., send to a backend or state management
+    handlePromptClose(); // Close the modal after handling the submission
   };
 
   return (
@@ -56,9 +50,7 @@ function Tools() {
         ))}
       </div>
       {activeTool && (
-        <div className="tool-prompt-overlay">
-          <ToolPrompt toolName={activeTool} onClose={handlePromptClose} onSubmit={handleFormSubmit} />
-        </div>
+        <ToolPrompt toolName={activeTool} onClose={handlePromptClose} onSubmit={handleFormSubmit} />
       )}
     </div>
   );

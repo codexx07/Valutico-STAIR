@@ -1,8 +1,7 @@
 .navbar {
-  background: #000000; /* Black background */
+  background-color: rgba(0, 0, 0, 0.7);/* Black background */
   width: 83px; /* Adjusted width */
   height: 100vh; /* Full height */
-  border-radius: 50px; /* Rounded corners */
   padding: 20px 0; /* Padding at top and bottom */
   box-sizing: border-box; /* Include padding and borders in the element's total width and height */
   display: flex;
@@ -14,25 +13,26 @@
   left: 0; /* Align to the left of the viewport */
   overflow: hidden; /* Hide overflow */
   z-index: 100; /* High z-index to stay above other content */
+  border-right: 2px solid white; /* Border only on the right side */
 }
 
 
 .navbar .logo {
-  margin-bottom: 30px; /* Space below the logo */
+  margin-bottom: 10px; /* Space below the logo */
 }
 
 .navbar-item {
-  background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
-  border-radius: 50%; /* Circular items */
-  width: 45px; /* Width of items */
-  height: 45px; /* Height of items */
-  margin: 10px 0; /* Space between items */
+  background: rgba(10, 10, 10, 0.2); /* Slightly transparent background */
+  width: 35px; /* Width of items */
+  height: 35px; /* Height of items */
   display: flex;
   align-items: center;
   justify-content: center; /* Center content */
   cursor: pointer;
-  position: relative; /* Position relative for absolute positioning of child elements */
+  border: none; /* Remove border if there is one */
+  margin-bottom: 5px; /* Increased space between button and text */
 }
+
 
 .navbar-item img {
   width: 30px; /* Width of icons */
@@ -41,15 +41,19 @@
   margin-right: 0px; /* Space between the icon and the text */
 }
 
-.Support-text span {
+.Support-text {
   color: white;
-  font-size: 12px;
-  position: absolute; /* Absolute position to break out of flexbox layout */
-  left: 100%; /* Position to the right of the icon */
-  white-space: nowrap; /* Ensure the text doesn't wrap */
-  margin-left: 8px; /* Space between the icon and the text */
-  display: block; /* Make span take up the full width */
+  font-size: 10px;
+  text-align: center; /* Center the text below the button */
 }
+
+.navbar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px; /* Adjust space as needed */
+}
+
 
 /* Adjustments for hover effects */
 .navbar-item:hover {

@@ -1,3 +1,26 @@
+/* body {
+  background-image: url('./assets/Ellipse 1.svg');
+  background-repeat: no-repeat; /* Do not repeat the image */
+  /* background-size: cover; /* Cover the entire area */
+  /* background-position: center; Center the image */ 
+/* } */ 
+
+/* Add a pseudo-element for the watermark */
+body::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit; /* Use the same image as the body background */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1; /* Adjust the opacity of the watermark */
+  z-index: -1; /* Place it behind the content */
+}
+
 .App {
   display: flex;
   font-family: 'Arial', sans-serif;
