@@ -100,7 +100,56 @@ const PeerSelection = () => {
 
         </div>
       )}
+
+{activeTab === 'benchmarking' && (
+        <div className="tableContainer">
+         <table>
+            <thead>
+                <tr>
+                <th rowSpan="2">Name</th>
+                <th colSpan="2">Sales Growth CAGR<br></br><br></br> 2019-2021</th>
+                <th colSpan="3">Sales Growth CAGR<br></br><br></br>2022-2024</th>
+                <th colSpan="3">Avg. EBIT Margin<br></br><br></br> 2022-2024</th>
+                <th colSpan="2">Avg. Capex as % of Sale<br></br><br></br> 2022-2024</th>
+                {/* Adjust the colSpan values according to the number of subheadings */}
+                </tr>
+                <tr>
+
+                </tr>
+            </thead>
+            <tbody>
+                {tableData.map(item => (
+                <tr key={item.id}>
+                    <td>{item.name}</td>
+                    <td>{item.country}</td>
+                    <td>{item.marketCap}</td>
+                    {/* Output additional data as needed */}
+                    <td>{item.evSales2021}</td>
+                    <td>{item.evSales2022}</td>
+                    <td>{item.evSales2023}</td>
+                    <td>{item.evEbitda2021}</td>
+                    <td>{item.evEbitda2022}</td>
+                    <td>{item.evEbitda2023}</td>
+                    <td>{item.evEbit2021}</td>
+                    <td>{item.evEbit2022}</td>
+                </tr>
+                ))}
+            </tbody>
+            </table>
+
+        </div>
+      )}
+
+
+      <div className="fixedButtonContainer">
+        <button className="businessPlanButton">Business Plan &gt;</button>
+      </div>
+      <div className="fixedButtonContainer1">
+      <button className="businessPlanButton1">Qualitative Assessment &gt;</button>
+      </div>
+
     </div>
+    
   );
 };
 

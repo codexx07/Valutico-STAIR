@@ -3,6 +3,7 @@
     background-color: #333;
     color: white;
     padding: 20px;
+    margin-left :60px
   }
   
   .peerSelectionHeader {
@@ -10,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: -140px;
   }
   
   .valuationInfo {
@@ -88,41 +90,110 @@
   
   /* ... (rest of your styles) ... */
 
+/* ... existing styles ... */
+
 .tableContainer {
     margin-top: 20px;
     overflow-x: auto; /* Allows table to scroll horizontally on small screens */
-    background-color: #222; /* Dark background for the table container */
-  }
-  
-  .tableContainer {
-    margin-top: 20px;
-    overflow-x: auto;
+    background-color: black; /* Black background for the table container */
+    border-radius: 8px; /* Rounded corners for the container */
   }
   
   table {
     width: 100%;
     border-collapse: collapse;
-    color: #fff;
   }
   
   thead {
-    background-color: #444;
+    background-color: black; /* Black background for the header */
   }
   
-  th, td {
-    padding: 10px;
-    border: 1px solid #777;
+  th {
+    padding: 12px 15px;
+    text-align: center; /* Center align text for headers */
+    background-color: black; /* Black background for headers */
+    color: #ddd; /* Light grey text for headers */
+    border: 1px solid grey; /* Grey borders for headers */
   }
   
-  tbody tr:nth-child(odd) {
-    background-color: #333;
+  tbody th, tbody td {
+    padding: 12px 15px;
+    text-align: center; /* Center align text for body cells */
+    background-color: black; /* Black background for body cells */
+    color: #fff; /* White text for body cells */
+    border: 1px solid grey; /* Grey borders for body cells */
   }
   
-  tbody tr:nth-child(even) {
-    background-color: #2b2b2b;
+  tbody tr:nth-child(odd), tbody tr:nth-child(even) {
+    background-color: black; /* Maintain black background for all rows */
   }
   
-  /* More specific styles can be added based on the full content of your table */
+  /* Hover styles for rows */
+  tbody tr:hover {
+    background-color: #1c1c1c; /* Slightly lighter black for hover */
+  }
   
-  /* You will need to add more specific styles to match the design of your table */
+  /* Rounded corners for the first and last cells */
+  th:first-child, td:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
   
+  th:last-child, td:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  /* Remove any specific alignment for numerical values if you want everything centered */
+  .fixedButtonContainer {
+    position: fixed; /* Fixed position to stick at the bottom */
+    left: 50%; /* Centering the button */
+    transform: translateX(-50%); /* Align center properly */
+    bottom: 20px; /* Distance from the bottom */
+    text-align: center;
+    margin-left: 600px; /* Ensure text inside the div is centered (affects the button) */
+  }
+  
+  .businessPlanButton {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid black; /* Button border */
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Top and bottom padding then left and right padding */
+    font-size: 14px; /* Text size */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    font-weight: bold; /* Make the text bold */
+    outline: none; /* Remove the outline to avoid box appearance on click */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Ensure the button does not fill the entire container */
+  }
+
+  .fixedButtonContainer1 {
+    position: fixed; /* Fixed position to stick at the bottom */
+    left: 50%; /* Centering the button */
+    transform: translateX(-50%); /* Align center properly */
+    bottom: 20px; /* Distance from the bottom */
+    text-align: center;
+    margin-left: -475px; /* Ensure text inside the div is centered (affects the button) */
+  }
+  
+  .businessPlanButton1 {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid black; /* Button border */
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Top and bottom padding then left and right padding */
+    font-size: 14px; /* Text size */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    font-weight: bold; /* Make the text bold */
+    outline: none; /* Remove the outline to avoid box appearance on click */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Ensure the button does not fill the entire container */
+  }
+  
+  .businessPlanButton:hover {
+    background-color: #f8f8f8; /* Slightly darker background on hover */
+  }
+    
