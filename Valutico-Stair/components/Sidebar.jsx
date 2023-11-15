@@ -1,23 +1,49 @@
 import React from 'react';
-import './Sidebar.css'; // Ensure you have a Sidebar.css file for styling
-
-// Import your icons
-import HomeIcon from '../assets/home-icon.svg'; // Replace with your actual icon paths
-import AddIcon from '../assets/add-icon.svg';
-// ... other icon imports
+import './Sidebar.css';
+// Import your icons here
+import addIcon from '../src/assets/Home.png'; // Replace with your actual icon paths
+import homeIcon from '../src/assets/BR.png';
+import reportIcon from '../src/assets/Coin in Hand.png';
+import searchIcon from '../src/assets/Order Completed.png';
+import userIcon from '../src/assets/Export.png';
+import exportIcon from '../src/assets/Increase.png';
+import pasteIcon from '../src/assets/Paste.png';
+import peer from '../src/assets/User Groups.png';
 
 function Sidebar() {
-  // You can replace these with your actual navigation logic
-  const navigate = (path) => {
-    console.log(`Navigate to: ${path}`);
-  };
-
   return (
+    <>
     <div className="sidebar">
-      <img src={HomeIcon} alt="Home" className="icon" onClick={() => navigate('/home')} />
-      <img src={AddIcon} alt="Add Files" className="icon" onClick={() => navigate('/add-files')} />
-      {/* ... other icons */}
+      <button className="sidebar-button">
+        <img src={addIcon} alt="Add Files" />
+      </button>
+      <button className="sidebar-button">
+        <img src={homeIcon} alt="Home" />
+      </button>
+      <button className="sidebar-button">
+        <img src={reportIcon} alt="Reports" />
+      </button>
+      <button className="sidebar-button">
+        <img src={searchIcon} alt="Search" />
+      </button>
+      <button className="sidebar-button">
+        <img src={userIcon} alt="User Profile" />
+      </button>
+      <button className="sidebar-button">
+        <img src={exportIcon} alt="Export Data" />
+      </button>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <button className="sidebar-button">
+        <img src={pasteIcon} alt="Export Data" />
+      </button>
+      <button className="sidebar-button">
+      <img src={peer} alt="Paste Data" />
+      </button>
     </div>
+    </>
   );
 }
 

@@ -1,6 +1,6 @@
 /* ToolPrompt.css */
 .Tools h2 {
-  margin-left: 45px;
+  margin-left: 65px;
   margin-top: 40px;
   color: #FFFFFF;
 }
@@ -11,6 +11,7 @@
   gap: 30px; /* Increase the gap if needed */
   padding: 40px; /* Increase padding around the grid for more space */
   justify-content: center;
+  margin:45px;
 }
 
 .tool-card {

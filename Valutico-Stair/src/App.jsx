@@ -5,6 +5,7 @@ import SearchBar from '../components/SearchBar';
 import Dashboard from '../components/Dashboard';
 import Tools from '../components/Tools';
 import RecentValuations from '../components/RecentValuations';
+import Sidebar from '../components/Sidebar';
 
 function App() {
   return (
@@ -12,16 +13,17 @@ function App() {
       <h1> Home </h1>
       <div className="App">
         {/* <Sidebar /> */}
-        <NavBar />
+        <NavBar/>
         <div className="content">
           <SearchBar />
           <Dashboard />
           <Tools />
           <RecentValuations />
-          {/* <Sidebar /> */}
+          <Sidebar />
         </div>
       </div>
     </div>
+    
   );
 }
 
