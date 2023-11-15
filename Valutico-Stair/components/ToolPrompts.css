@@ -2,46 +2,45 @@
 .Tools h2 {
   margin-left: 45px;
   margin-top: 40px;
-  color:#FFFFFF;
+  color: #FFFFFF;
 }
 
 .tools-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* This will create a responsive grid layout */
-  gap: 20px; /* Adjust the gap between the cards */
-  padding: 20px; /* Padding around the grid */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Increase the minmax value for larger cards */
+  gap: 30px; /* Increase the gap if needed */
+  padding: 40px; /* Increase padding around the grid for more space */
   justify-content: center;
 }
 
 .tool-card {
   background: #FFFFFF; /* White background */
-  border: none; /* Removes the default button border */
+  border: none; /* Ensure there's no border */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
   display: flex;
   flex-direction: column;
   align-items: center; /* Center items in the card */
   justify-content: space-between; /* Space out the image and text */
-  padding: 10px; /* Padding inside the card */
+  padding: 20px; /* Increase padding inside the card for more space */
   cursor: pointer; /* Change cursor on hover */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
 
 .tool-card:hover {
   transform: translateY(-5px); /* Slightly raise the card on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow on hover for a "lift" effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a "lift" effect */
 }
 
 .tool-icon {
-  width: 100%; /* Make the image take up the full width of the card */
-  padding: 10px; /* Padding around the image */
+  width: 100%; /* Ensure the image takes up the full width of the card */
   box-sizing: border-box; /* Ensure padding is included in width and height */
 }
 
 .tool-icon img {
   max-width: 100%; /* Ensure the image is not larger than the container */
-  max-height: 80px; /* Set a max-height for the image */
-  margin-bottom: 10px; /* Space between the image and the text */
+  max-height: 120px; /* Increase max-height for the image for larger cards */
+  margin-bottom: 15px; /* Increase space between the image and the text */
 }
 
 .tool-info {
@@ -49,15 +48,16 @@
 }
 
 .tool-info h3 {
-  font-size: 1em; /* Adjust font size as needed */
+  font-size: 1.2em; /* Increase font size as needed */
   margin: 0; /* Remove default margins */
 }
 
 .tool-info p {
-  font-size: 0.8em; /* Adjust font size as needed */
+  font-size: 1em; /* Increase font size as needed */
   color: #666666; /* Dark gray text for the description */
   margin: 0; /* Remove default margins */
 }
+
 
 .tool-prompt-overlay {
   position: fixed;
