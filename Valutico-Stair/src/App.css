@@ -5,6 +5,22 @@
   min-height: 100vh; /* Ensure full vertical height */
 }
 
+.app h1{
+  margin-left: 140px;
+  margin-top: 30px;
+  color:White;
+  font-size: 40px;
+}
+
+.app{
+  background-color: black;
+  border-image: linear-gradient(
+    129.73deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
 .content {
   flex-grow: 1;
   padding: 20px;

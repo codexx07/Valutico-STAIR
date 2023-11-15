@@ -8,15 +8,18 @@ import RecentValuations from '../components/RecentValuations';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Sidebar /> */}
-      <NavBar />
-      <div className="content">
-        <SearchBar />
-        <Dashboard />
-        <Tools />
-        <RecentValuations />
+    <div className="app">
+      <h1> Home </h1>
+      <div className="App">
         {/* <Sidebar /> */}
+        <NavBar />
+        <div className="content">
+          <SearchBar />
+          <Dashboard />
+          <Tools />
+          <RecentValuations />
+          {/* <Sidebar /> */}
+        </div>
       </div>
     </div>
   );
