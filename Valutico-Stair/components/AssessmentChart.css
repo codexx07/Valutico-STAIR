@@ -1,0 +1,119 @@
+/* Add this to your AssessmentChart.css file */
+
+.chart-header {
+  background: linear-gradient(to right, #757575, #bcbcbc);
+  color: white;
+  padding: 15px 30px; /* Slightly reduced padding */
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.chart-header h2 {
+  margin-left: 60px; /* Slightly reduced margin-left */
+  font-size: 1.8em; /* Slightly reduced font size */
+  margin: 0;
+  font-weight: normal;
+  flex: 1;
+}
+
+.section-heading {
+  font-size: 1.5em; /* Slightly reduced font size */
+  font-weight: bold;
+  margin-top: 30px; /* Slightly reduced margin-top */
+  margin-left: 60px; /* Slightly reduced margin-left */
+  margin-bottom: 5px; /* Slightly reduced margin-bottom */
+  color: #ddd;
+}
+
+.chart-subheader {
+  background: #666;
+  color: #ddd;
+  padding: 8px 30px; /* Slightly reduced padding */
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em; /* Slightly reduced font size */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 5px 5px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Reduced space between sliders */
+  color: #fff;
+  margin-top: 30px; /* Slightly increased margin-top */
+  margin-left: 60px; /* Slightly reduced margin-left */
+}
+
+.slider-label {
+  flex: 3;
+  font-size: 1em; /* Slightly reduced font size */
+  margin-right: 15px; /* Reduced space between label and slider */
+}
+
+.slider {
+  flex: 5;
+  -webkit-appearance: none;
+  height: 8px; /* Reduced slider length */
+  border-radius: 5px;
+  background: #555;
+  outline: none;
+  transition: background 0.2s ease;
+}
+
+.slider:hover {
+  background: #666;
+}
+
+.slider-value {
+  flex: 1;
+  min-width: 30px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background: #ddd;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.slider::-moz-range-thumb:hover {
+  background: #ddd;
+}
+
+/* Style adjustments for consistency with the image */
+.slider-container {
+  border-bottom: 1px solid #555; /* Each slider container has a bottom border */
+  padding-bottom: 10px; /* Slightly reduced space below each slider */
+}
+
+/* Remove the margin from the last slider container to align with the design */
+.slider-container:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}

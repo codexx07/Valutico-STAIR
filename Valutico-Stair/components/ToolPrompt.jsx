@@ -16,6 +16,10 @@ function ToolPrompt({ toolName, onClose, onSubmit, styleType }) {
 
   const promptClass = styleType === 'private' ? 'tool-prompt-private' : 'tool-prompt-public';
 
+  const handleClick = () => {
+    SecondPage(); // Trigger the function when button is clicked
+  };
+
   return (
     <div className="tool-prompt-overlay">
       <div className={`tool-prompt ${promptClass}`}>
@@ -36,7 +40,7 @@ function ToolPrompt({ toolName, onClose, onSubmit, styleType }) {
             Keep Updated
             <input type="checkbox" name="keepUpdated" />
           </label>
-          <button type="submit" className="create-button">Create</button>
+          <button type="submit" className="create-button" onClick={handleClick}>Create</button>
         </form>
       </div>
     </div>
