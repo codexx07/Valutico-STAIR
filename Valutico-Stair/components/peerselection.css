@@ -3,27 +3,29 @@
     background-color: #333;
     color: white;
     padding: 20px;
-    margin-left: 40px;
+    margin-left: 60px;
   }
   
   .peerSelectionHeader {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
+    margin-left: -140px
   }
   
-  .peerSelectionHeader h1 {
-    font-size: 35px;
-    margin: 0;
-    margin-left: 30px;
-  }
-
-  .valuationInfo{
-    margin-right: 500px;
+  .valuationInfo {
+    text-align: right;
+    color: #aaa;
   }
   
   .searchArea {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputContainer {
+    position: relative;
     display: flex;
     align-items: center;
   }
@@ -32,33 +34,23 @@
     padding: 8px 16px;
     font-size: 14px;
     border: none;
-    border-radius: 20px; /* Rounded corners for the input */
+    border-radius: 20px;
     color: #333;
     background-color: #fff;
-    margin-right: 8px; /* Spacing between input and button */
+    flex-grow: 1;
   }
   
   .searchButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px; /* Fixed width and height for a square look */
-    height: 40px;
+    padding: 8px;
+    border: none;
     background-color: transparent;
-    border: 1px solid #fff; /* White border */
-    border-radius: 50%; /* Rounded edges */
-    color: #fff;
     cursor: pointer;
-    margin-right: 8px; /* Spacing between button and advanced search */
+    outline: none;
   }
-  .advancedSearch {
-    background-color: #fff;
-    color: #333;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 20px; /* Consistent rounded edges */
-    cursor: pointer;
-    font-size: 14px;
+  
+  .searchIconImage {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
   }
   
   .advancedSearch {
@@ -66,16 +58,17 @@
     color: #333;
     padding: 8px 16px;
     border: none;
-    border-radius: 20px; /* Consistent rounded edges */
+    border-radius: 20px;
     cursor: pointer;
     font-size: 14px;
+    margin-left: 8px;
   }
   
-  .tabMenu {
+.tabMenu {
     display: flex;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
+    gap: 10px; /* This creates space between your tabs */
+    margin-top: 20px;
+    border-bottom: 3px solid white; /* Adds a white border below all tabs */
   }
   
   .tabButton {
@@ -85,13 +78,13 @@
     padding: 10px 20px;
     cursor: pointer;
     font-size: 14px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s; /* Smooth transition for background color */
   }
   
   .tabButton:hover,
   .tabButton.active {
-    border-bottom: 3px solid white; /* Highlight for active/hover state */
+    color: white; /* Changes text color to black */
+    background-color: black; /* Changes background color to white */
+    border-radius: 5px; /* Optional: Rounds the corners a bit */
   }
-  
-  /* Additional styles and responsive adjustments as needed */
   

@@ -1,11 +1,13 @@
 import React from 'react';
 import './PeerSelection.css';
-// Import the search icon image
-import searchIcon from '../src/assets/Search.png'; // Update the path to your image
+import searchIcon from '../src/assets/Search.png'; // Update this path to the actual location of your image file
 
 const PeerSelection = () => {
-  // Handle tab switch logic
-  // Define any other necessary state and handlers here
+  // Define your search handler here
+  const handleSearch = () => {
+    console.log('Search initiated');
+    // Implement your search logic here
+  };
 
   return (
     <div className="peerSelection">
@@ -13,15 +15,16 @@ const PeerSelection = () => {
         <h1>Peer Selection</h1>
         <div className="valuationInfo">
           <span>Valuation date: 10-10-2023</span>
-          <br></br>
-          <br></br>
+          <br />
           <span>Currency in INR Crores</span>
         </div>
         <div className="searchArea">
-          <input type="text" placeholder="Quick add peers" className="searchInput"/>
-          <button className="searchButton">
-            <img src={searchIcon} alt="Search" />
-          </button>
+          <div className="inputContainer">
+            <input type="text" placeholder="Quick add peers" className="searchInput" />
+            <button onClick={handleSearch} className="searchButton">
+              <img src={searchIcon} alt="Search" className="searchIconImage" />
+            </button>
+          </div>
           <button className="advancedSearch">Advanced Search</button>
         </div>
       </div>
