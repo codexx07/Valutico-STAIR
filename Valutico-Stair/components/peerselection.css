@@ -1,0 +1,97 @@
+.peerSelection {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+  }
+  
+  .peerSelectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .peerSelectionHeader h1 {
+    font-size: 35px;
+    margin: 0;
+    margin-left: 30px;
+  }
+
+  .valuationInfo{
+    margin-right: 500px;
+  }
+  
+  .searchArea {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px; /* Rounded corners for the input */
+    color: #333;
+    background-color: #fff;
+    margin-right: 8px; /* Spacing between input and button */
+  }
+  
+  .searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Fixed width and height for a square look */
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #fff; /* White border */
+    border-radius: 50%; /* Rounded edges */
+    color: #fff;
+    cursor: pointer;
+    margin-right: 8px; /* Spacing between button and advanced search */
+  }
+  .advancedSearch {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px; /* Consistent rounded edges */
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .advancedSearch {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px; /* Consistent rounded edges */
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .tabMenu {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tabButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .tabButton:hover,
+  .tabButton.active {
+    border-bottom: 3px solid white; /* Highlight for active/hover state */
+  }
+  
+  /* Additional styles and responsive adjustments as needed */
+  

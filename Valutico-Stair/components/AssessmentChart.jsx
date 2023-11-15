@@ -48,8 +48,8 @@ const AssessmentChart = () => {
         <h2>Qualitative Assessment</h2>
       </div>
       <div className="chart-subheader">
-        <span>Value</span>
-        <span>Weight</span>
+        <span className="subheader-text">Value</span>
+        <span className="subheader-text2">Weight</span>
       </div>
       {/* Group 1: General */}
       <div className="section-heading">General</div>

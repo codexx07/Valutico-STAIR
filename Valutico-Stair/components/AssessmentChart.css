@@ -41,6 +41,14 @@
   border-radius: 0 0 5px 5px;
 }
 
+.subheader-text{
+  margin-left: 760px;
+}
+
+.subheader-text2{
+  margin-right:20px;
+}
+
 .slider-container {
   display: flex;
   align-items: center;
