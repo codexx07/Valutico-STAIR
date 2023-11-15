@@ -3,7 +3,6 @@
     background-color: #333;
     color: white;
     padding: 20px;
-    margin-left: 60px;
   }
   
   .peerSelectionHeader {
@@ -11,7 +10,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    margin-left: -140px
   }
   
   .valuationInfo {
@@ -49,8 +47,8 @@
   }
   
   .searchIconImage {
-    width: 24px; /* Adjust the size as needed */
-    height: 24px; /* Adjust the size as needed */
+    width: 24px;
+    height: 24px;
   }
   
   .advancedSearch {
@@ -64,11 +62,11 @@
     margin-left: 8px;
   }
   
-.tabMenu {
+  .tabMenu {
     display: flex;
-    gap: 10px; /* This creates space between your tabs */
+    gap: 10px;
     margin-top: 20px;
-    border-bottom: 3px solid white; /* Adds a white border below all tabs */
+    border-bottom: 3px solid white;
   }
   
   .tabButton {
@@ -78,13 +76,53 @@
     padding: 10px 20px;
     cursor: pointer;
     font-size: 14px;
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    transition: background-color 0.3s;
   }
   
   .tabButton:hover,
   .tabButton.active {
-    color: white; /* Changes text color to black */
-    background-color: black; /* Changes background color to white */
-    border-radius: 5px; /* Optional: Rounds the corners a bit */
+    color: white;
+    background-color: black;
+    border-radius: 5px;
   }
+  
+  /* ... (rest of your styles) ... */
+
+.tableContainer {
+    margin-top: 20px;
+    overflow-x: auto; /* Allows table to scroll horizontally on small screens */
+    background-color: #222; /* Dark background for the table container */
+  }
+  
+  .tableContainer {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  
+  thead {
+    background-color: #444;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #777;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #333;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #2b2b2b;
+  }
+  
+  /* More specific styles can be added based on the full content of your table */
+  
+  /* You will need to add more specific styles to match the design of your table */
   
