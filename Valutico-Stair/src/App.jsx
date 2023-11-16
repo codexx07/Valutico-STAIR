@@ -29,45 +29,45 @@ import Peerselection from '../components/peerselection';
 // }
 
 
-// function App() {
-//   return (
-//     <div className="app">
-//     {/* <h1> Home </h1> */}
-//     <div className="App">
-//       {/* <Sidebar /> */}
-//       <NavBar/>
-//       <Sidebar />
-//       <div className="content">
-//         <AssessmentChart />
-//         {/* <SearchBar />
-//         <Dashboard />
-//         <Tools />
-//         <RecentValuations /> */}
-        
-//       </div>
-//     </div>
-//   </div>
-//   )
-// }
-
 function App() {
   return (
     <div className="app">
-      {/* <h1> Home </h1> */}
-      <div className="App">
-        {/* <Sidebar /> */}
-        <NavBar/>
-        <Sidebar />
-        <div className="content">
-          {/* <SearchBar />
-          <Dashboard />
-          <Tools />
-          <RecentValuations /> */}
-          <Peerselection />
-        </div>
+    {/* <h1> Home </h1> */}
+    <div className="App">
+      {/* <Sidebar /> */}
+      <NavBar/>
+      <Sidebar />
+      <div className="content">
+        <AssessmentChart />
+        {/* <SearchBar />
+        <Dashboard />
+        <Tools />
+        <RecentValuations /> */}
+        
       </div>
     </div>
-  );
+  </div>
+  )
 }
+
+// function App() {
+//   return (
+//     <div className="app">
+//       {/* <h1> Home </h1> */}
+//       <div className="App">
+//         {/* <Sidebar /> */}
+//         <NavBar/>
+//         <Sidebar />
+//         <div className="content">
+//           {/* <SearchBar />
+//           <Dashboard />
+//           <Tools />
+//           <RecentValuations /> */}
+//           <Peerselection />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default App;
