@@ -4,7 +4,7 @@ import UploadIcon from '../src/assets/Upload.png';
 import DownloadIcon from '../src/assets/Download.png';
 
 const BuisnessPlan = () => {
-  const [activeTab, setActiveTab] = useState('trading');
+  const [activeTab, setActiveTab] = useState('financialprojections');
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const BuisnessPlan = () => {
   return (
     <div className="businessValuation">
       <div className="businessValuationHeader">
-        <h1>Business Valuation</h1>
+        <h1>Business Plan</h1>
         <div className="valuationInfo">
           <span>Valuation date: 10-10-2023</span>
           <br />
@@ -34,116 +34,190 @@ const BuisnessPlan = () => {
             <img src={UploadIcon} alt="Upload" className="iconButton" />
             <img src={DownloadIcon} alt="Download" className="iconButton" />
           </div>
-          <button className="scenarioButton">Scenario Manager</button>
           <button className="timeFrameButton">Time Frame</button>
         </div>
       </div>
       <div className="tabMenu">
-        <button onClick={() => setActiveTab('trading')} className={`tabButton ${activeTab === 'trading' ? 'active' : ''}`}>Trading</button>
+        <button onClick={() => setActiveTab('financialprojections')} className={`tabButton ${activeTab === 'financialprojections' ? 'active' : ''}`}>Financial Projections</button>
+        <button onClick={() => setActiveTab('validations')} className={`tabButton ${activeTab === 'validations' ? 'active' : ''}`}>Validations</button>
         <button onClick={() => setActiveTab('benchmarking')} className={`tabButton ${activeTab === 'benchmarking' ? 'active' : ''}`}>Benchmarking</button>
-        <button onClick={() => setActiveTab('beta')} className={`tabButton ${activeTab === 'beta' ? 'active' : ''}`}>Beta</button>
+        <button onClick={() => setActiveTab('ev-eq')} className={`tabButton ${activeTab === 'ev-eq' ? 'active' : ''}`}>EV-EQV Bridge</button>
+
       </div>
-      {activeTab === 'trading' && (
+      {activeTab === 'financialprojections' && (
         <div className="tableContainer">
          <table>
-            <thead>
-                <tr>
-                <th rowSpan="2">Name</th>
-                <th colSpan="2">Company Info</th>
-                <th colSpan="3">EV/Sales</th>
-                <th colSpan="3">EV/EBITDA</th>
-                <th colSpan="2">EV/EBIT</th>
-                {/* Adjust the colSpan values according to the number of subheadings */}
-                </tr>
-                <tr>
-                {/* These are the subheadings under "Company Info" */}
-                <th>Country</th>
-                <th>Market Cap INR</th>
-                
-                {/* These are the subheadings under "EV/Sales" */}
-                <th>2021</th>
-                <th>2022</th>
-                <th>2023</th>
-                
-                {/* Add subheadings for EV/EBITDA */}
-                <th>2021</th>
-                <th>2022</th>
-                <th>2023</th>
-                
-                {/* Add subheadings for EV/EBIT */}
-                <th>2021</th>
-                <th>2022</th>
-                </tr>
-            </thead>
-            <tbody>
-                {tableData.map(item => (
-                <tr key={item.id}>
-                    <td>{item.name}</td>
-                    <td>{item.country}</td>
-                    <td>{item.marketCap}</td>
-                    {/* Output additional data as needed */}
-                    <td>{item.evSales2021}</td>
-                    <td>{item.evSales2022}</td>
-                    <td>{item.evSales2023}</td>
-                    <td>{item.evEbitda2021}</td>
-                    <td>{item.evEbitda2022}</td>
-                    <td>{item.evEbitda2023}</td>
-                    <td>{item.evEbit2021}</td>
-                    <td>{item.evEbit2022}</td>
-                </tr>
-                ))}
-            </tbody>
-            </table>
+          <thead>
+            <tr>
+              <th rowSpan="2"></th>
+              <th colSpan="3">Actual</th>
+              <th colSpan="3">Futuristic</th>
+              <th rowSpan="2">Growth Graph</th>
+            </tr>
+            <tr>
+              <th>2021</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th>2024</th>
+              <th>2025</th>
+              <th>2026</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sales</td>
+              {/* Data cells for sales */}
+            </tr>
+            <tr>
+              <td>% Sales growth</td>
+              {/* Data cells for % sales growth */}
+            </tr>
+            <tr>
+              <td>EBITDA</td>
+              {/* Data cells for EBITDA */}
+            </tr>
+            <tr>
+              <td>Depreciation & Amortisation</td>
+              {/* Data cells for Depreciation & Amortisation */}
+            </tr>
+            <tr>
+              <td>EBIT</td>
+              {/* Data cells for EBIT */}
+            </tr>
+            <tr>
+              <td>Net Income</td>
+              {/* Data cells for Net Income */}
+            </tr>
+            <tr>
+              <td>Capex</td>
+              {/* Data cells for Capex */}
+            </tr>
+            <tr>
+              <td>Accounts Receivable</td>
+              {/* Data cells for Accounts Receivable */}
+            </tr>
+            <tr>
+              <td>Inventories</td>
+              {/* Data cells for Inventories */}
+            </tr>
+            {/* Continue mapping over your data as needed */}
+          </tbody>
+        </table>
+
 
         </div>
       )}
 
-{activeTab === 'benchmarking' && (
+{activeTab === 'validations' && (
         <div className="tableContainer">
-         <table>
-            <thead>
-                <tr>
-                <th rowSpan="2">Name</th>
-                <th colSpan="2">Sales Growth CAGR<br></br><br></br> 2019-2021</th>
-                <th colSpan="3">Sales Growth CAGR<br></br><br></br>2022-2024</th>
-                <th colSpan="3">Avg. EBIT Margin<br></br><br></br> 2022-2024</th>
-                <th colSpan="2">Avg. Capex as % of Sale<br></br><br></br> 2022-2024</th>
-                {/* Adjust the colSpan values according to the number of subheadings */}
-                </tr>
-                <tr>
-
-                </tr>
-            </thead>
-            <tbody>
-                {tableData.map(item => (
-                <tr key={item.id}>
-                    <td>{item.name}</td>
-                    <td>{item.country}</td>
-                    <td>{item.marketCap}</td>
-                    {/* Output additional data as needed */}
-                    <td>{item.evSales2021}</td>
-                    <td>{item.evSales2022}</td>
-                    <td>{item.evSales2023}</td>
-                    <td>{item.evEbitda2021}</td>
-                    <td>{item.evEbitda2022}</td>
-                    <td>{item.evEbitda2023}</td>
-                    <td>{item.evEbit2021}</td>
-                    <td>{item.evEbit2022}</td>
-                </tr>
-                ))}
+        <table>
+          <thead>
+            <tr>
+              <th rowSpan="2"> Growth </th>
+              <th colSpan="3">Actual</th>
+              <th colSpan="3">Futuristic</th>
+              <th rowSpan="2">Growth Graph</th>
+            </tr>
+            <tr>
+              <th>2021</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th>2024</th>
+              <th>2025</th>
+              <th>2026</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sales Growth</td>
+              {/* Data cells for sales */}
+            </tr>
+            <tr>
+              <td>EBITDA growth</td>
+              {/* Data cells for % sales growth */}
+            </tr>
+            <tr>
+              <td>EBIT growth</td>
+              {/* Data cells for EBITDA */}
+            </tr>
+            <tr>
+              <td>EBIT Growth</td>
+              {/* Data cells for Depreciation & Amortisation */}
+            </tr>
+            <tr>
+              <td>Net Income growth</td>
+              {/* Data cells for EBIT */}
+            </tr>
             </tbody>
             </table>
+            <table>
+          <thead>
+            <tr>
+              <th rowSpan="2"> Margins </th>
+              <th colSpan="3">Actual</th>
+              <th colSpan="3">Futuristic</th>
+              <th rowSpan="2">Growth Graph</th>
+            </tr>
+            <tr>
+              <th>2021</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th>2024</th>
+              <th>2025</th>
+              <th>2026</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EBITDA margin</td>
+              {/* Data cells for sales */}
+            </tr>
+            <tr>
+              <td>EBIT margin</td>
+              {/* Data cells for % sales growth */}
+            </tr>
+            <tr>
+              <td>Net Income margin</td>
+            </tr>
+            </tbody>
+            </table>
+            <table>
+          <thead>
+            <tr>
+              <th rowSpan="2"> Investements </th>
+              <th colSpan="3">Actual</th>
+              <th colSpan="3">Futuristic</th>
+              <th rowSpan="2">Growth Graph</th>
+            </tr>
+            <tr>
+              <th>2021</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th>2024</th>
+              <th>2025</th>
+              <th>2026</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EBITDA margin</td>
+              {/* Data cells for sales */}
+            </tr>
+            <tr>
+              <td>EBIT margin</td>
+              {/* Data cells for % sales growth */}
+            </tr>
+            <tr>
+              <td>Net Income margin</td>
+            </tr>
+            </tbody>
+            </table>
+
 
         </div>
       )}
 
 
-      <div className="fixedButtonContainer">
-        <button className="businessPlanButton">Business Plan &gt;</button>
-      </div>
-      <div className="fixedButtonContainer1">
-      <button className="businessPlanButton1">Qualitative Assessment &gt;</button>
-      </div>
 
     </div>
     
