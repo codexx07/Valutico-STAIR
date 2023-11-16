@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './AssessmentChart.css'; // Make sure this CSS file has the styles provided earlier
+import './AssessmentChart.css';
 
 // Individual slider component
 const AssessmentSlider = ({ label, value, onChange }) => (
@@ -19,7 +19,6 @@ const AssessmentSlider = ({ label, value, onChange }) => (
 
 // The main component for the qualitative assessment
 const AssessmentChart = () => {
-  // State for each of the assessment criteria
   const [values, setValues] = useState({
     'Company Size': 50,
     'Positioning': 50,
@@ -32,12 +31,17 @@ const AssessmentChart = () => {
     'Management Quality': 50,
   });
 
-  // Handler to update the state when a slider value changes
   const handleSliderChange = (criteria, newValue) => {
     setValues({ ...values, [criteria]: parseInt(newValue, 10) });
   };
 
-  // Create separate arrays of sliders for different groups of criteria
+  const calculateAverage = () => {
+    const total = Object.values(values).reduce((sum, current) => sum + current, 0);
+    return (total / Object.keys(values).length).toFixed(2);
+  };
+
+  const averageValue = calculateAverage();
+
   const generalSliders = ['Company Size', 'Positioning'];
   const marketSliders = ['Market Size', 'Market Growth', 'Market Share'];
   const managementSliders = ['Competition', 'Exposure To Business Cycle', 'Exposure To Political Legal Factors', 'Management Quality'];
@@ -51,7 +55,6 @@ const AssessmentChart = () => {
         <span className="subheader-text">Value</span>
         <span className="subheader-text2">Weight</span>
       </div>
-      {/* Group 1: General */}
       <div className="section-heading">General</div>
       {generalSliders.map((criteria) => (
         <AssessmentSlider
@@ -61,7 +64,6 @@ const AssessmentChart = () => {
           onChange={handleSliderChange}
         />
       ))}
-      {/* Group 2: Market */}
       <div className="section-heading">Market</div>
       {marketSliders.map((criteria) => (
         <AssessmentSlider
@@ -71,7 +73,6 @@ const AssessmentChart = () => {
           onChange={handleSliderChange}
         />
       ))}
-      {/* Group 3: Management */}
       <div className="section-heading">Management</div>
       {managementSliders.map((criteria) => (
         <AssessmentSlider
@@ -81,6 +82,20 @@ const AssessmentChart = () => {
           onChange={handleSliderChange}
         />
       ))}
+      <div className="buttonContainer">
+        <button className="businessPlanButton">Business Plan &gt;</button>
+      </div>
+      <div className="fixed-bar">
+        <div className="fixed-bar-item">
+          <span>Risk Factor: {averageValue}%</span>
+        </div>
+        <div className="fixed-bar-item">
+          <span>Cost of Equity Premium: {averageValue}%</span>
+        </div>
+        <div className="fixed-bar-item">
+          <span>Discount of Trading Multiples: {averageValue}%</span>
+        </div>
+      </div>
     </div>
   );
 };
