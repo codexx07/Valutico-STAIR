@@ -1,7 +1,9 @@
 from django.db import models
 from django.contrib.postgres.fields import ArrayField
+from createcomp.models import Company
 
 class FinancialProjectionsModel(models.Model):
+    comapny_id = models.ForeignKey(Company, on_delete=models.CASCADE)
     sales = ArrayField(models.FloatField(), size=8)
     growth_percentage = ArrayField(models.FloatField(), size=8)
     ebita = ArrayField(models.FloatField(), size=8)

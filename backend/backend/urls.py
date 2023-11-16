@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("createcomp.urls")),
     path('qualitative_analysis/', include('qualitative_analysis.urls')),
-    path('peers/', include('peers.urls'))
+    path('peers/', include('peers.urls')),
+    path('business_analysis/', include('business_analysis.urls'))
 ]

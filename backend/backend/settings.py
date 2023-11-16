@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'createcomp',
     'qualitative_analysis',
     'peers',
+    'business_analysis',
     'rest_framework',
 ]
 
@@ -79,8 +80,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'test',
+        'USER': 'postgres',
+        'PASSWORD': 'kedu1108',
+        'HOST': 'localhost',
+        'PORT' : '5432' 
     }
 }
 
