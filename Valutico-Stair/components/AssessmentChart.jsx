@@ -82,9 +82,7 @@ const AssessmentChart = () => {
           onChange={handleSliderChange}
         />
       ))}
-      <div className="buttonContainer">
-        <button className="businessPlanButton">Business Plan &gt;</button>
-      </div>
+      
       <div className="fixed-bar">
         <div className="fixed-bar-item">
           <span>Risk Factor: {averageValue}%</span>
@@ -95,6 +93,12 @@ const AssessmentChart = () => {
         <div className="fixed-bar-item">
           <span>Discount of Trading Multiples: {averageValue}%</span>
         </div>
+      </div>
+      <div className="buttonContainer">
+        <button className="businessPlanButton">Business Plan &gt;</button>
+      </div>
+      <div className="buttonContainer">
+        <button className="businessPlanButton1">Qualitative Assessment &gt;</button>
       </div>
     </div>
   );

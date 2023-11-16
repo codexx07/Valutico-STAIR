@@ -30,26 +30,26 @@ import BuisnessPlan from '../components/BuisnessValuation';
 // }
 
 
-// function App() {
-//   return (
-//     <div className="app">
-//     {/* <h1> Home </h1> */}
-//     <div className="App">
-//       {/* <Sidebar /> */}
-//       <NavBar/>
-//       <Sidebar />
-//       <div className="content">
-//         <AssessmentChart />
-//         {/* <SearchBar />
-//         <Dashboard />
-//         <Tools />
-//         <RecentValuations /> */}
+function App() {
+  return (
+    <div className="app">
+    {/* <h1> Home </h1> */}
+    <div className="App">
+      {/* <Sidebar /> */}
+      <NavBar/>
+      <Sidebar />
+      <div className="content">
+        <AssessmentChart />
+        {/* <SearchBar />
+        <Dashboard />
+        <Tools />
+        <RecentValuations /> */}
         
-//       </div>
-//     </div>
-//   </div>
-//   )
-// }
+      </div>
+    </div>
+  </div>
+  )
+}
 
 // function App() {
 //   return (
@@ -60,10 +60,6 @@ import BuisnessPlan from '../components/BuisnessValuation';
 //         <NavBar/>
 //         <Sidebar />
 //         <div className="content">
-//           {/* <SearchBar />
-//           <Dashboard />
-//           <Tools />
-//           <RecentValuations /> */}
 //           <Peerselection />
 //         </div>
 //       </div>
@@ -72,20 +68,20 @@ import BuisnessPlan from '../components/BuisnessValuation';
 // }
 
 
-function App() {
-  return (
-    <div className="app">
-    {/* <h1> Home </h1> */}
-    <div className="App">
-      {/* <Sidebar /> */}
-      <NavBar/>
-      <Sidebar />
-      <div className="content">
-        <BuisnessPlan />
+// function App() {
+//   return (
+//     <div className="app">
+//     {/* <h1> Home </h1> */}
+//     <div className="App">
+//       {/* <Sidebar /> */}
+//       <NavBar/>
+//       <Sidebar />
+//       <div className="content">
+//         <BuisnessPlan />
         
-      </div>
-    </div>
-  </div>
-  )
-}
+//       </div>
+//     </div>
+//   </div>
+//   )
+// }
 export default App;

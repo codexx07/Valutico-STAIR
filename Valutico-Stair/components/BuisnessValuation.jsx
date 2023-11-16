@@ -297,29 +297,39 @@ const BuisnessPlan = () => {
           <tbody>
             <tr>
               <td>Debt</td>
+              <th colSpan="3"></th>
+              <td><input type="text" placeholder="Add." className="searchInput" /></td>
               {/* Data cells for sales */}
             </tr>
             <tr>
               <td>Pensions</td>
+              <th colSpan="3"></th>
+              <td><input type="text" placeholder="Add." className="searchInput" /></td>
               {/* Data cells for % sales growth */}
             </tr>
             <tr>
               <td>Non Controlling Interest</td>
+              <th colSpan="3"></th>
+              <td><input type="text" placeholder="Add." className="searchInput" /></td>
               {/* Data cells for EBITDA */}
             </tr>
             <tr>
               <td>Cash</td>
+              <th colSpan="3"></th>
+              <td><input type="text" placeholder="Add." className="searchInput" /></td>
               {/* Data cells for Depreciation & Amortisation */}
             </tr>
             <tr>
               <td>Minimum Cash</td>
+              <th colSpan="3"></th>
+              <td><input type="text" placeholder="Add." className="searchInput" /></td>
               {/* Data cells for EBIT */}
             </tr>
             <tr>
               <td><button className="button"> Add Custom Factor</button></td>
             </tr>
             <tr>
-              <td>Net Depth Adjustments</td>
+              <td>Net Debt adjustments</td>
             </tr>
             </tbody>
             </table>

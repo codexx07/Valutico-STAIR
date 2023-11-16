@@ -125,30 +125,35 @@
   border-bottom: none;
   padding-bottom: 0;
 }
-
-.buttonContainer {
-  text-align: center; /* Center the button */
-  padding: 20px 0; /* Add some vertical padding */
+.fixedButtonContainer1 {
+  position: absolute; /* Changed from fixed to absolute */
+  bottom: -60px; /* Adjust this value to place the button at the desired location above the fixed bar */
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10; /* Ensure it's above the fixed bar */
 }
 
-.businessPlanButton {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-weight: bold;
-  outline: none;
-  text-decoration: none;
-  display: inline-block; /* This will center the button with text-align */
-  margin: 0 auto;
-  margin-left: 1150px; /* Auto margins can also help with centering inline-block elements */
+/* Adjust the button styles to remove margin-left */
+.businessPlanButton{
+  margin: 0 auto; /* Center the button with auto margins */
+  display: block;
+  margin-left:1200px
+}
+.businessPlanButton1 {
+  /* ... existing styles ... */
+  margin: 0 auto; /* Center the button with auto margins */
+  display: block; 
+  margin-left: 50px;
+/* Change from inline-block to block if you want to use auto margins for centering */
 }
 
+/* Ensure the container of the buttons is positioned relative */
+.yourContainerClassName { /* Add the class name of the container which wraps your buttons */
+  position: relative;
+}
 
+/* Fixed bar styling */
 .fixed-bar {
   position: fixed; /* Fix to the bottom of the viewport */
   bottom: 0;
