@@ -156,4 +156,17 @@
   
   /* Remove any specific alignment for numerical values if you want everything centered */
 
-  
+  .button {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid black; /* Button border */
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Top and bottom padding then left and right padding */
+    font-size: 14px; /* Text size */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    font-weight: bold; /* Make the text bold */
+    outline: none; /* Remove the outline to avoid box appearance on click */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Ensure the button does not fill the entire container */
+  }

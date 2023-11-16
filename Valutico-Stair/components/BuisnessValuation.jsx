@@ -19,6 +19,26 @@ const BuisnessPlan = () => {
     // Implement your search logic here
   };
 
+  const NavigationBar = () => {
+    const [activeSection, setActiveSection] = useState('Sales');
+  
+    const sections = ['Sales', 'EBITDA', 'EBIT', 'Net Income', 'Capex', 'Other', 'Overview'];
+  
+    return (
+      <div className="navigationContainer">
+        {sections.map(section => (
+          <button
+            key={section}
+            className={`navButton ${activeSection === section ? 'active' : ''}`}
+            onClick={() => setActiveSection(section)}
+          >
+            {section}
+          </button>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <div className="businessValuation">
       <div className="businessValuationHeader">
@@ -101,6 +121,22 @@ const BuisnessPlan = () => {
               {/* Data cells for Inventories */}
             </tr>
             {/* Continue mapping over your data as needed */}
+            {tableData.map(item => (
+                <tr key={item.id}>
+                    <td>{item.name}</td>
+                    <td>{item.country}</td>
+                    <td>{item.marketCap}</td>
+                    {/* Output additional data as needed */}
+                    <td>{item.evSales2021}</td>
+                    <td>{item.evSales2022}</td>
+                    <td>{item.evSales2023}</td>
+                    <td>{item.evEbitda2021}</td>
+                    <td>{item.evEbitda2022}</td>
+                    <td>{item.evEbitda2023}</td>
+                    <td>{item.evEbit2021}</td>
+                    <td>{item.evEbit2022}</td>
+                </tr>
+                ))}
           </tbody>
         </table>
 
@@ -179,6 +215,22 @@ const BuisnessPlan = () => {
             <tr>
               <td>Net Income margin</td>
             </tr>
+            {tableData.map(item => (
+                <tr key={item.id}>
+                    <td>{item.name}</td>
+                    <td>{item.country}</td>
+                    <td>{item.marketCap}</td>
+                    {/* Output additional data as needed */}
+                    <td>{item.evSales2021}</td>
+                    <td>{item.evSales2022}</td>
+                    <td>{item.evSales2023}</td>
+                    <td>{item.evEbitda2021}</td>
+                    <td>{item.evEbitda2022}</td>
+                    <td>{item.evEbitda2023}</td>
+                    <td>{item.evEbit2021}</td>
+                    <td>{item.evEbit2022}</td>
+                </tr>
+                ))}
             </tbody>
             </table>
             <table>
@@ -210,12 +262,72 @@ const BuisnessPlan = () => {
             <tr>
               <td>Net Income margin</td>
             </tr>
+            {tableData.map(item => (
+                <tr key={item.id}>
+                    <td>{item.name}</td>
+                    <td>{item.country}</td>
+                    <td>{item.marketCap}</td>
+                    {/* Output additional data as needed */}
+                    <td>{item.evSales2021}</td>
+                    <td>{item.evSales2022}</td>
+                    <td>{item.evSales2023}</td>
+                    <td>{item.evEbitda2021}</td>
+                    <td>{item.evEbitda2022}</td>
+                    <td>{item.evEbitda2023}</td>
+                    <td>{item.evEbit2021}</td>
+                    <td>{item.evEbit2022}</td>
+                </tr>
+                ))}
             </tbody>
             </table>
 
+        </div>
+      )}
+
+{activeTab === 'ev-eq' && (
+        <div className="tableContainer">
+        <table>
+          <thead>
+            <tr>
+              <th rowSpan="2">  </th>
+              <th colSpan="3">2023</th>
+              <th colSpan="3">Overwrite</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Debt</td>
+              {/* Data cells for sales */}
+            </tr>
+            <tr>
+              <td>Pensions</td>
+              {/* Data cells for % sales growth */}
+            </tr>
+            <tr>
+              <td>Non Controlling Interest</td>
+              {/* Data cells for EBITDA */}
+            </tr>
+            <tr>
+              <td>Cash</td>
+              {/* Data cells for Depreciation & Amortisation */}
+            </tr>
+            <tr>
+              <td>Minimum Cash</td>
+              {/* Data cells for EBIT */}
+            </tr>
+            <tr>
+              <td><button className="button"> Add Custom Factor</button></td>
+            </tr>
+            <tr>
+              <td>Net Depth Adjustments</td>
+            </tr>
+            </tbody>
+            </table>
+            
 
         </div>
       )}
+
 
 
 
