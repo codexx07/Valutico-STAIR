@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'createcomp',
     'qualitative_analysis',
+    'peers',
     'rest_framework',
 ]
 
