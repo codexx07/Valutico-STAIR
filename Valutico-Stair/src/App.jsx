@@ -8,6 +8,7 @@ import RecentValuations from '../components/RecentValuations';
 import Sidebar from '../components/Sidebar';
 import AssessmentChart from '../components/AssessmentChart';
 import Peerselection from '../components/peerselection';
+import BuisnessPlan from '../components/BuisnessValuation';
 // function App() {
 //   return (
 //     <div className="app">
@@ -29,26 +30,26 @@ import Peerselection from '../components/peerselection';
 // }
 
 
-function App() {
-  return (
-    <div className="app">
-    {/* <h1> Home </h1> */}
-    <div className="App">
-      {/* <Sidebar /> */}
-      <NavBar/>
-      <Sidebar />
-      <div className="content">
-        <AssessmentChart />
-        {/* <SearchBar />
-        <Dashboard />
-        <Tools />
-        <RecentValuations /> */}
+// function App() {
+//   return (
+//     <div className="app">
+//     {/* <h1> Home </h1> */}
+//     <div className="App">
+//       {/* <Sidebar /> */}
+//       <NavBar/>
+//       <Sidebar />
+//       <div className="content">
+//         <AssessmentChart />
+//         {/* <SearchBar />
+//         <Dashboard />
+//         <Tools />
+//         <RecentValuations /> */}
         
-      </div>
-    </div>
-  </div>
-  )
-}
+//       </div>
+//     </div>
+//   </div>
+//   )
+// }
 
 // function App() {
 //   return (
@@ -70,4 +71,21 @@ function App() {
 //   );
 // }
 
+
+function App() {
+  return (
+    <div className="app">
+    {/* <h1> Home </h1> */}
+    <div className="App">
+      {/* <Sidebar /> */}
+      <NavBar/>
+      <Sidebar />
+      <div className="content">
+        <BuisnessPlan />
+        
+      </div>
+    </div>
+  </div>
+  )
+}
 export default App;
