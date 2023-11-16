@@ -3,17 +3,16 @@ import './BuisnessValuation.css';
 import UploadIcon from '../src/assets/Upload.png';
 import DownloadIcon from '../src/assets/Download.png';
 
-const BusinessPlan = () => {
+const BuisnessPlan = () => {
   const [activeTab, setActiveTab] = useState('trading');
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
-    // Replace 'http://localhost:8000/api/your-endpoint' with the actual endpoint from where you're fetching data
     fetch('http://localhost:8000/api/your-endpoint')
       .then(response => response.json())
       .then(data => setTableData(data))
       .catch(error => console.error('Error fetching data:', error));
-  }, []); // The empty array causes this effect to only run on mount
+  }, []);
 
   const handleSearch = () => {
     console.log('Search initiated');
@@ -21,24 +20,22 @@ const BusinessPlan = () => {
   };
 
   return (
-    <div className="peerSelection">
-      {/* ...other components */}
-
-      <div className="peerSelectionHeader">
-        <h1>Peer Selection</h1>
+    <div className="businessValuation">
+      <div className="businessValuationHeader">
+        <h1>Business Valuation</h1>
         <div className="valuationInfo">
           <span>Valuation date: 10-10-2023</span>
           <br />
           <span>Currency in INR Crores</span>
         </div>
-        <div className="searchArea">
-          <div className="inputContainer">
-            <input type="text" placeholder="Quick add peers" className="searchInput" />
-            <button onClick={handleSearch} className="searchButton">
-              <img src={UploadIcon} alt="Search" className="searchIconImage" />
-            </button>
+        <div className="scenarioControlArea">
+          <button className="scenarioButton">Scenario 1</button>
+          <div className="iconsContainer">
+            <img src={UploadIcon} alt="Upload" className="iconButton" />
+            <img src={DownloadIcon} alt="Download" className="iconButton" />
           </div>
-          <button className="advancedSearch">Advanced Search</button>
+          <button className="scenarioButton">Scenario Manager</button>
+          <button className="timeFrameButton">Time Frame</button>
         </div>
       </div>
       <div className="tabMenu">
@@ -153,4 +150,4 @@ const BusinessPlan = () => {
   );
 };
 
-export default BusinessPlan;
+export default BuisnessPlan;
