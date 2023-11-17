@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import './PeerSelection.css';
 import searchIcon from '../src/assets/Search.png';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 const PeerSelection = () => {
   const [activeTab, setActiveTab] = useState('trading');
@@ -141,11 +143,13 @@ const PeerSelection = () => {
       )}
 
 
-      <div className="fixedButtonContainer">
+      {/* <div className="fixedButtonContainer">
         <button className="businessPlanButton">Business Plan &gt;</button>
-      </div>
+      </div> */}
       <div className="fixedButtonContainer1">
+      <Link to="/QualitativeAssessment">
       <button className="businessPlanButton1">Qualitative Assessment &gt;</button>
+      </Link>
       </div>
 
     </div>

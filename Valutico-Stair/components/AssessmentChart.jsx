@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './AssessmentChart.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 // Individual slider component
 const AssessmentSlider = ({ label, value, onChange }) => (
@@ -148,10 +150,9 @@ const AssessmentChart = () => {
         </div>
       </div>
       <div className="buttonContainer">
+        <Link to="/BuisnessPlan">
         <button className="businessPlanButton">Business Plan &gt;</button>
-      </div>
-      <div className="buttonContainer">
-        <button className="businessPlanButton1">Qualitative Assessment &gt;</button>
+        </Link>
       </div>
     </div>
   );

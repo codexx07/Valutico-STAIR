@@ -1,6 +1,8 @@
 // ToolPrompt.jsx
 import React from 'react';
 import './ToolPrompts.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 function ToolPrompt({ toolName, onClose, onSubmit, styleType }) {
   const handleSubmit = (event) => {
@@ -40,7 +42,9 @@ function ToolPrompt({ toolName, onClose, onSubmit, styleType }) {
             Keep Updated
             <input type="checkbox" name="keepUpdated" />
           </label>
+          <Link to="/QualitativeAssessment">
           <button type="submit" className="create-button" onClick={handleClick}>Create</button>
+          </Link>
         </form>
       </div>
     </div>

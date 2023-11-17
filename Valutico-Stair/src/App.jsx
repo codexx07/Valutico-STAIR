@@ -1,87 +1,25 @@
+import HomePage from '../pages/HomePage'
+import PeerSelection from '../pages/PeerSelection'
+import QualitativeAssessment from '../pages/QualitativeAssessment'
+import BuisnessPlan from '../pages/BuisnessPlan'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import React from 'react';
-import './App.css';
-import NavBar from '../components/NavBar';
-import SearchBar from '../components/SearchBar';
-import Dashboard from '../components/Dashboard';
-import Tools from '../components/Tools';
-import RecentValuations from '../components/RecentValuations';
-import Sidebar from '../components/Sidebar';
-import AssessmentChart from '../components/AssessmentChart';
-import Peerselection from '../components/peerselection';
-import BuisnessPlan from '../components/BuisnessValuation';
-// function App() {
-//   return (
-//     <div className="app">
-//       <h1> Home </h1>
-//       <div className="App">
-//         {/* <Sidebar /> */}
-//         <NavBar/>
-//         <Sidebar />
-//         <div className="content">
-//           <SearchBar />
-//           <Dashboard />
-//           <Tools />
-//           <RecentValuations />
-          
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 
-
-function App() {
+export default function App() {
   return (
-    <div className="app">
-    {/* <h1> Home </h1> */}
-    <div className="App">
-      {/* <Sidebar /> */}
-      <NavBar/>
-      <Sidebar />
-      <div className="content">
-        <AssessmentChart />
-        {/* <SearchBar />
-        <Dashboard />
-        <Tools />
-        <RecentValuations /> */}
-        
-      </div>
+    <div>
+    <Router>
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/peer-selection" element={<PeerSelection />} />
+          <Route path="/BuisnessPlan" element={<BuisnessPlan />} />
+          <Route path="/QualitativeAssessment" element={<QualitativeAssessment />} />
+        </Routes>
+    </Router>
     </div>
-  </div>
-  )
+  );
 }
 
-// function App() {
-//   return (
-//     <div className="app">
-//       {/* <h1> Home </h1> */}
-//       <div className="App">
-//         {/* <Sidebar /> */}
-//         <NavBar/>
-//         <Sidebar />
-//         <div className="content">
-//           <Peerselection />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 
 
-// function App() {
-//   return (
-//     <div className="app">
-//     {/* <h1> Home </h1> */}
-//     <div className="App">
-//       {/* <Sidebar /> */}
-//       <NavBar/>
-//       <Sidebar />
-//       <div className="content">
-//         <BuisnessPlan />
-        
-//       </div>
-//     </div>
-//   </div>
-//   )
-// }
-export default App;

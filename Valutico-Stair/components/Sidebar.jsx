@@ -9,17 +9,23 @@ import userIcon from '../src/assets/Export.png';
 import exportIcon from '../src/assets/Increase.png';
 import pasteIcon from '../src/assets/Paste.png';
 import peer from '../src/assets/User Groups.png';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 function Sidebar() {
   return (
     <>
     <div className="sidebar">
+      <Link to="/home">
       <button className="sidebar-button">
         <img src={addIcon} alt="Add Files" />
       </button>
+      </Link>
+      <Link to="/BuisnessPlan">
       <button className="sidebar-button">
         <img src={homeIcon} alt="Home" />
       </button>
+      </Link>
       <button className="sidebar-button">
         <img src={reportIcon} alt="Reports" />
       </button>
@@ -37,11 +43,13 @@ function Sidebar() {
       <br></br>
       <br></br>
       <button className="sidebar-button">
-        <img src={pasteIcon} alt="Export Data" />
+        <img src={pasteIcon} alt="Paste Data" />
       </button>
-      <button className="sidebar-button">
-      <img src={peer} alt="Paste Data" />
-      </button>
+      <Link to="/peer-selection">
+        <button className="sidebar-button">
+          <img src={peer} alt="Peer Selection" />
+        </button>
+      </Link>
     </div>
     </>
   );
