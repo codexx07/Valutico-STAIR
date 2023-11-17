@@ -1,0 +1,199 @@
+.peerSelection {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-left :60px
+  }
+  
+  .peerSelectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: -140px;
+  }
+  
+  .valuationInfo {
+    text-align: right;
+    color: #aaa;
+  }
+  
+  .searchArea {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    background-color: #fff;
+    flex-grow: 1;
+  }
+  
+  .searchButton {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .searchIconImage {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .advancedSearch {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+  }
+  
+  .tabMenu {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    border-bottom: 3px solid white;
+  }
+  
+  .tabButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .tabButton:hover,
+  .tabButton.active {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+  }
+  
+  /* ... (rest of your styles) ... */
+
+/* ... existing styles ... */
+
+.tableContainer {
+    margin-top: 20px;
+    overflow-x: auto; /* Allows table to scroll horizontally on small screens */
+    background-color: black; /* Black background for the table container */
+    border-radius: 8px; /* Rounded corners for the container */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: black; /* Black background for the header */
+  }
+  
+  th {
+    padding: 12px 15px;
+    text-align: center; /* Center align text for headers */
+    background-color: black; /* Black background for headers */
+    color: #ddd; /* Light grey text for headers */
+    border: 1px solid grey; /* Grey borders for headers */
+  }
+  
+  tbody th, tbody td {
+    padding: 12px 15px;
+    text-align: center; /* Center align text for body cells */
+    background-color: black; /* Black background for body cells */
+    color: #fff; /* White text for body cells */
+    border: 1px solid grey; /* Grey borders for body cells */
+  }
+  
+  tbody tr:nth-child(odd), tbody tr:nth-child(even) {
+    background-color: black; /* Maintain black background for all rows */
+  }
+  
+  /* Hover styles for rows */
+  tbody tr:hover {
+    background-color: #1c1c1c; /* Slightly lighter black for hover */
+  }
+  
+  /* Rounded corners for the first and last cells */
+  th:first-child, td:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  
+  th:last-child, td:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  /* Remove any specific alignment for numerical values if you want everything centered */
+  .fixedButtonContainer {
+    position: fixed; /* Fixed position to stick at the bottom */
+    left: 50%; /* Centering the button */
+    transform: translateX(-50%); /* Align center properly */
+    bottom: 20px; /* Distance from the bottom */
+    text-align: center;
+    margin-left: 600px; /* Ensure text inside the div is centered (affects the button) */
+  }
+  
+  .businessPlanButton {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid black; /* Button border */
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Top and bottom padding then left and right padding */
+    font-size: 14px; /* Text size */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    font-weight: bold; /* Make the text bold */
+    outline: none; /* Remove the outline to avoid box appearance on click */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Ensure the button does not fill the entire container */
+  }
+
+  .fixedButtonContainer1 {
+    position: fixed; /* Fixed position to stick at the bottom */
+    left: 50%; /* Centering the button */
+    transform: translateX(-50%); /* Align center properly */
+    bottom: 20px; /* Distance from the bottom */
+    text-align: center;
+    margin-left: -475px; /* Ensure text inside the div is centered (affects the button) */
+  }
+  
+  .businessPlanButton1 {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid black; /* Button border */
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Top and bottom padding then left and right padding */
+    font-size: 14px; /* Text size */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    font-weight: bold; /* Make the text bold */
+    outline: none; /* Remove the outline to avoid box appearance on click */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Ensure the button does not fill the entire container */
+  }
+  
+  .businessPlanButton:hover {
+    background-color: #f8f8f8; /* Slightly darker background on hover */
+  }
+    
