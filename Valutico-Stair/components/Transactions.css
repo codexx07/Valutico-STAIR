@@ -21,72 +21,63 @@
   
   .searchArea {
     display: flex;
-    align-items: center;
+    align-items: center; /* Align vertically */
+    justify-content: space-between; /* Space between search and buttons */
+  }
+
+  .searchArea2 {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    background-color: #333; /* Adjust the color to match your theme */
+    padding: 10px;
   }
   
   .inputContainer {
-    position: relative;
     display: flex;
+    margin-left:300px;
+    margin-top:-50px;
     align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 10px; /* Space between search input and buttons */
   }
   
   .searchInput {
-    padding: 8px 16px;
-    font-size: 14px;
     border: none;
-    border-radius: 20px;
-    color: #333;
-    background-color: #fff;
+    padding: 10px;
     flex-grow: 1;
   }
   
   .searchButton {
-    padding: 8px;
+    background: transparent;
     border: none;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
+    padding: 10px;
   }
   
-  .searchIconImage {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .advancedSearch {
-    background-color: #fff;
-    color: #333;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-left: 8px;
-  }
-  
-  .tabMenu {
+  .buttonGroup {
     display: flex;
-    gap: 10px;
-    margin-top: 20px;
-    border-bottom: 3px solid white;
+    flex-direction: column; /* Stack buttons vertically */
   }
   
-  .tabButton {
-    background-color: transparent;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
-  }
-  
-  .tabButton:hover,
-  .tabButton.active {
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-  }
+  .advancedSearch,
+.customTransactionButton {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px; /* Space between buttons */
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.advancedSearch {
+  background-color: #fff;
+  color: #333;
+}
+
+.customTransactionButton {
+  background-color: #666; /* Darker shade for the button */
+  color: white;
+}
   
   /* ... (rest of your styles) ... */
 
@@ -197,3 +188,5 @@
     background-color: #f8f8f8; /* Slightly darker background on hover */
   }
     
+
+ 

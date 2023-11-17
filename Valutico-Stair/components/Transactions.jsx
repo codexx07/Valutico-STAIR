@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import './PeerSelection.css';
+import './Transactions.css';
 import searchIcon from '../src/assets/Search.png';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
@@ -35,49 +35,31 @@ const PeerSelection = () => {
         </div>
         <div className="searchArea">
           <div className="inputContainer">
-            <input type="text" placeholder="Quick add peers" className="searchInput" />
+            <input type="text" placeholder="Search here..." className="searchInput" />
             <button onClick={handleSearch} className="searchButton">
               <img src={searchIcon} alt="Search" className="searchIconImage" />
             </button>
           </div>
+        </div>
+        <div className="searchArea2">
           <button className="advancedSearch">Advanced Search</button>
+          <button className="customTransactionButton">Add custom transaction</button>
         </div>
+
       </div>
-      <div className="tabMenu">
-        <button onClick={() => setActiveTab('trading')} className={`tabButton ${activeTab === 'trading' ? 'active' : ''}`}>Trading</button>
-        <button onClick={() => setActiveTab('benchmarking')} className={`tabButton ${activeTab === 'benchmarking' ? 'active' : ''}`}>Benchmarking</button>
-        <button onClick={() => setActiveTab('beta')} className={`tabButton ${activeTab === 'beta' ? 'active' : ''}`}>Beta</button>
-      </div>
-      {activeTab === 'trading' && (
         <div className="tableContainer">
          <table>
             <thead>
                 <tr>
-                <th rowSpan="2">Name</th>
-                <th colSpan="2">Company Info</th>
-                <th colSpan="3">EV/Sales</th>
-                <th colSpan="3">EV/EBITDA</th>
-                <th colSpan="2">EV/EBIT</th>
+                <th>Date Announced</th>
+                <th>Bidder</th>
+                <th>Target</th>
+                <th>Target Country</th>
+                <th>Source</th>
+                <th>Stake Acquired</th>
+                <th>Deal Value</th>
+                <th>EV/Sales</th>
                 {/* Adjust the colSpan values according to the number of subheadings */}
-                </tr>
-                <tr>
-                {/* These are the subheadings under "Company Info" */}
-                <th>Country</th>
-                <th>Market Cap INR</th>
-                
-                {/* These are the subheadings under "EV/Sales" */}
-                <th>2021</th>
-                <th>2022</th>
-                <th>2023</th>
-                
-                {/* Add subheadings for EV/EBITDA */}
-                <th>2021</th>
-                <th>2022</th>
-                <th>2023</th>
-                
-                {/* Add subheadings for EV/EBIT */}
-                <th>2021</th>
-                <th>2022</th>
                 </tr>
             </thead>
             <tbody>
@@ -101,54 +83,16 @@ const PeerSelection = () => {
             </table>
 
         </div>
-      )}
+      
 
-{activeTab === 'benchmarking' && (
-        <div className="tableContainer">
-         <table>
-            <thead>
-                <tr>
-                <th rowSpan="2">Name</th>
-                <th colSpan="2">Sales Growth CAGR<br></br><br></br> 2019-2021</th>
-                <th colSpan="3">Sales Growth CAGR<br></br><br></br>2022-2024</th>
-                <th colSpan="3">Avg. EBIT Margin<br></br><br></br> 2022-2024</th>
-                <th colSpan="2">Avg. Capex as % of Sale<br></br><br></br> 2022-2024</th>
-                {/* Adjust the colSpan values according to the number of subheadings */}
-                </tr>
-                <tr>
-
-                </tr>
-            </thead>
-            <tbody>
-                {tableData.map(item => (
-                <tr key={item.id}>
-                    <td>{item.name}</td>
-                    <td>{item.country}</td>
-                    <td>{item.marketCap}</td>
-                    {/* Output additional data as needed */}
-                    <td>{item.evSales2021}</td>
-                    <td>{item.evSales2022}</td>
-                    <td>{item.evSales2023}</td>
-                    <td>{item.evEbitda2021}</td>
-                    <td>{item.evEbitda2022}</td>
-                    <td>{item.evEbitda2023}</td>
-                    <td>{item.evEbit2021}</td>
-                    <td>{item.evEbit2022}</td>
-                </tr>
-                ))}
-            </tbody>
-            </table>
-
-        </div>
-      )}
 
 
       {/* <div className="fixedButtonContainer">
         <button className="businessPlanButton">Business Plan &gt;</button>
       </div> */}
       <div className="fixedButtonContainer1">
-      <Link to="/QualitativeAssessment">
-      <button className="businessPlanButton1">Qualitative Assessment &gt;</button>
+      <Link to="/BuisnessPlan">
+      <button className="businessPlanButton1">Buisness Plan &gt;</button>
       </Link>
       </div>
 
