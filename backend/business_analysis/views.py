@@ -7,6 +7,13 @@ from .serializer import FinancialProjectionsSerializer
 @api_view(['GET'])
 def getFinancialProjections(request):
     company = request.GET.get('company', '')
-    app = FinancialProjectionsModel.objects.filter
+    app = FinancialProjectionsModel.objects.filter(company_id__name=company)
+    serialiser = FinancialProjectionsSerializer(app, many=True)
+    return Response(serialiser.data)
+
+@api_view(['GET'])
+def getFinancialProjections(request):
+    industry = request.GET.get('industry')
+    app = FinancialProjectionsModel.objects.filter(industry=industry)
     serialiser = FinancialProjectionsSerializer(app, many=True)
     return Response(serialiser.data)
