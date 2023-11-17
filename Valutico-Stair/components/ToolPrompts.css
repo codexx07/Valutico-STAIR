@@ -1,0 +1,131 @@
+/* ToolPrompt.css */
+.Tools h2 {
+  margin-left: 65px;
+  margin-top: 40px;
+  color: #FFFFFF;
+}
+
+.tools-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Increase the minmax value for larger cards */
+  gap: 30px; /* Increase the gap if needed */
+  padding: 40px; /* Increase padding around the grid for more space */
+  justify-content: center;
+  margin:45px;
+}
+
+.tool-card {
+  background: #FFFFFF; /* White background */
+  border: none; /* Ensure there's no border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items in the card */
+  justify-content: space-between; /* Space out the image and text */
+  padding: 20px; /* Increase padding inside the card for more space */
+  cursor: pointer; /* Change cursor on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.tool-card:hover {
+  transform: translateY(-5px); /* Slightly raise the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a "lift" effect */
+}
+
+.tool-icon {
+  width: 100%; /* Ensure the image takes up the full width of the card */
+  box-sizing: border-box; /* Ensure padding is included in width and height */
+}
+
+.tool-icon img {
+  max-width: 100%; /* Ensure the image is not larger than the container */
+  max-height: 120px; /* Increase max-height for the image for larger cards */
+  margin-bottom: 15px; /* Increase space between the image and the text */
+}
+
+.tool-info {
+  text-align: center; /* Center the text horizontally */
+}
+
+.tool-info h3 {
+  font-size: 1.2em; /* Increase font size as needed */
+  margin: 0; /* Remove default margins */
+}
+
+.tool-info p {
+  font-size: 1em; /* Increase font size as needed */
+  color: #666666; /* Dark gray text for the description */
+  margin: 0; /* Remove default margins */
+}
+
+
+.tool-prompt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dim the background */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  z-index: 1000; /* Above other content */
+}
+
+.tool-prompt {
+  background: white;
+  padding: 40px; /* Increase padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+  width: auto; /* Adjust width as needed */
+  max-width: 500px; /* Maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for floating effect */
+  z-index: 1001;
+}
+
+.tool-prompt-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Increase bottom margin for spacing */
+}
+
+.close-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+}
+
+.tool-prompt-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-prompt-form label {
+  display: block; /* Make label a block element for proper alignment */
+  margin-bottom: 20px; /* Increase bottom margin for spacing */
+}
+
+.tool-prompt-form input[type="text"],
+.tool-prompt-form input[type="date"] {
+  width: 100%; /* Full width */
+  padding: 15px; /* Increase padding for a larger touch area */
+  margin-top: 5px;
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Rounded corners for the inputs */
+}
+
+.tool-prompt-form input[type="checkbox"] {
+  margin-left: 5px; /* Add a little left margin for visual space around checkbox */
+}
+
+.tool-prompt-form .create-button {
+  padding: 15px 30px; /* Increase padding for a larger button */
+  margin-top: 20px; /* Increase margin top for spacing */
+  background-color: #4CAF50; /* Example button color, change as needed */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Set font size for button text */
+}

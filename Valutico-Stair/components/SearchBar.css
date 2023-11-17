@@ -1,0 +1,29 @@
+.SearchBar {
+  background-color: #252525; /* Dark background color */
+  padding: 10px; /* Reduced padding */
+  border-radius: 50px; /* Fully rounded corners */
+  display: flex;
+  align-items: center; /* Vertically align items */
+  width: 1200px;
+  margin-left: 80px; /* Adjust the width to make it shorter */
+}
+
+.SearchBar input {
+  border: none; /* Remove border */
+  background-color: transparent; /* Transparent background */
+  padding: 5px; /* Reduced padding */
+  width: 100%;
+  color: #fff; /* Text color */
+  font-size: 16px; /* Adjust font size */
+}
+
+.SearchBar input::placeholder {
+  color: #777; /* Placeholder text color */
+}
+
+/* Add a custom search icon (you can use an image or an icon library) */
+.SearchBar .search-icon {
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Icon size */
+  margin-left: 10px; /* Spacing between input and icon (moved to the left) */
+}

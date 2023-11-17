@@ -1,0 +1,172 @@
+.businessValuation {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-left: 60px;
+  }
+  
+  .businessValuationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: -140px;
+  }
+  
+  .valuationInfo {
+    text-align: right;
+    color: #aaa;
+  }
+  .scenarioControlArea {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    padding: 10px;
+    background-color: #333; /* Dark background for the control area */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  }
+  
+  .scenarioButton {
+    background-color: #666; /* Lighter gray for buttons */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px; /* Add margin between buttons and icons */
+    cursor: pointer;
+  }
+  
+  /* Container for the scenario manager and its icons */
+  .scenarioManagerContainer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items vertically */
+    margin: 0 10px; /* Add margin between this container and other buttons */
+  }
+  
+  .iconsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px; /* Space between the button and icons */
+  }
+  
+  .iconButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* Make the icon behave like a button */
+    padding: 8px; /* Padding around the icon for easier click */
+  }
+  
+  .iconButton img {
+    width: 24px; /* Set the width of the icon */
+    height: 24px; /* Set the height of the icon */
+  }
+  
+  .timeFrameButton {
+    background-color: #666; /* Lighter gray for button */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px; /* Add margin on the left side */
+    cursor: pointer;
+  }
+  
+  .tabMenu {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    border-bottom: 3px solid white;
+  }
+  
+  .tabButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .tabButton:hover,
+  .tabButton.active {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+  }
+  
+  /* ... (rest of your styles) ... */
+
+/* ... existing styles ... */
+
+.tableContainer {
+    margin-top: 20px;
+    overflow-x: auto; /* Allows table to scroll horizontally on small screens */
+    background-color: black; /* Black background for the table container */
+    border-radius: 8px; /* Rounded corners for the container */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: black; /* Black background for the header */
+  }
+  
+  th {
+    padding: 12px 15px;
+    text-align: center; /* Center align text for headers */
+    background-color: black; /* Black background for headers */
+    color: #ddd; /* Light grey text for headers */
+    border: 1px solid grey; /* Grey borders for headers */
+  }
+  
+  tbody th, tbody td {
+    padding: 12px 15px;
+    text-align: center; /* Center align text for body cells */
+    background-color: black; /* Black background for body cells */
+    color: #fff; /* White text for body cells */
+    border: 1px solid grey; /* Grey borders for body cells */
+  }
+  
+  tbody tr:nth-child(odd), tbody tr:nth-child(even) {
+    background-color: black; /* Maintain black background for all rows */
+  }
+  
+  /* Hover styles for rows */
+  tbody tr:hover {
+    background-color: #1c1c1c; /* Slightly lighter black for hover */
+  }
+  
+  /* Rounded corners for the first and last cells */
+  th:first-child, td:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  
+  th:last-child, td:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  /* Remove any specific alignment for numerical values if you want everything centered */
+
+  .button {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid black; /* Button border */
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Top and bottom padding then left and right padding */
+    font-size: 14px; /* Text size */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    font-weight: bold; /* Make the text bold */
+    outline: none; /* Remove the outline to avoid box appearance on click */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Ensure the button does not fill the entire container */
+  }

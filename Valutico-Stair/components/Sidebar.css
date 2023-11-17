@@ -1,0 +1,71 @@
+/* Sidebar.css */
+.sidebar {
+  background-color: #333333; /* Greyish background color */
+  width: 60px; /* Smaller width of the sidebar */
+  height: 75vh; /* 75% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top; /* Center the buttons vertically */
+  position: fixed; /* Fixed position */
+  left: 83px; /* Position next to the navbar, adjust if navbar width changes */
+  top: 50%; /* Start at the middle of the screen */
+  transform: translateY(-50%); /* Offset by half the height of the sidebar to center it */
+  z-index: 150; /* Adjust z-index as necessary */
+  border-radius: 30px; /* Rounded edges */
+  overflow: hidden; /* Hide overflow inside the rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+.Big{
+    position: fixed; /* Fixed position relative to the viewport */
+    top: 0;          /* Aligned to the top of the viewport */
+    left: 0;         /* Aligned to the left of the viewport */
+    width: 83px;     /* Set the width of the box */
+    height: 100%;    /* Full height to cover the entire viewport vertically */
+    background-color: #000000; /* Black background color */
+    z-index: 100;    /* Ensures it's above most other content, adjust as needed */
+}
+/* Add this to your Sidebar.css */
+.Big .separate-button {
+  position: absolute; /* Position the button absolutely relative to the sidebar */
+  bottom: -60px; /* Adjust this value as needed to place the button below the sidebar */
+  left: 50%; /* Start at the horizontal center of the sidebar */
+  transform: translateX(-50%); /* Center the button horizontally */
+  width: 40px; /* Width for the button */
+  height: 40px; /* Height for the button */
+  border-radius: 20px; /* Rounded corners for the button */
+  cursor: pointer;
+  /* Additional styles for the separate button */
+}
+
+
+.sidebar-button {
+  background: none;
+  border: none;
+  margin-top: 10px;
+  width: 40px; /* Width for buttons */
+  height: 40px; /* Height for buttons */
+  border-radius: 20px; /* Rounded corners for buttons */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  margin-bottom: 15px; /* Adjusted space between buttons */
+}
+
+.sidebar-button:last-child {
+  margin-bottom: 0; /* No margin for the last button */
+}
+
+.sidebar-button img {
+  width: 25px; /* Width for icons */
+  height: 25px; /* Height for icons */
+}
+
+.sidebar-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+}
+
+/* Add styles for active state, if necessary */
+.sidebar-button.active {
+  background-color: rgba(255, 255, 255, 0.2); /* Background for active state */
+}

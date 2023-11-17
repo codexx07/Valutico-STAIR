@@ -1,0 +1,51 @@
+.RecentValuations {
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+  backdrop-filter: blur(100px); /* Blur any content behind the dashboard */
+  border-radius: 30px; /* Rounded corners */
+  color: white; /* White text color */
+  padding: 20px; /* Padding around the content */
+  margin: 60px; /* Margin around the dashboard for spacing */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); /* Shadow for depth */
+  overflow: hidden; /* Hide overflow */
+  border: 2px solid transparent; /* Border for possible border-image */
+  /* border-image: linear-gradient(
+    129.73deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  ); */
+  border-image-slice: 1;
+}
+
+.RecentValuations h2{
+  color:white;
+}
+
+.valuations-cards {
+  display: flex;
+  gap: 15px; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 15px 0; /* Add padding on top and bottom */
+}
+
+.valuation-card {
+  flex: 0 0 auto; /* Do not grow or shrink, but can be basis */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 15px;
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Fixed width for cards */
+  color: #333; /* Dark text color */
+}
+
+.valuation-card img {
+  width: 50px; /* Fixed width for logos */
+  height: 50px; /* Fixed height for logos */
+  margin-bottom: 15px; /* Space between logo and text */
+}
+
+/* Add any other styles you notice from the image like font-sizes, weight, etc. */

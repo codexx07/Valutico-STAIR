@@ -1,0 +1,66 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);/* Black background */
+  width: 83px; /* Adjusted width */
+  height: 100vh; /* Full height */
+  padding: 20px 0; /* Padding at top and bottom */
+  box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: start; /* Align items to start vertically */
+  position: fixed; /* Fixed position to stay in view */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  overflow: hidden; /* Hide overflow */
+  z-index: 100; /* High z-index to stay above other content */
+  border-right: 2px solid white; /* Border only on the right side */
+}
+
+
+.navbar .logo {
+  margin-bottom: 10px; /* Space below the logo */
+}
+
+.navbar-item {
+  background: rgba(10, 10, 10, 0.2); /* Slightly transparent background */
+  width: 35px; /* Width of items */
+  height: 35px; /* Height of items */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content */
+  cursor: pointer;
+  border: none; /* Remove border if there is one */
+  margin-bottom: 5px; /* Increased space between button and text */
+}
+
+
+.navbar-item img {
+  width: 30px; /* Width of icons */
+  height: auto; /* Maintain aspect ratio */
+  /* Adjust the following margin if you need more space between the icon and the text */
+  margin-right: 0px; /* Space between the icon and the text */
+}
+
+.Support-text {
+  color: white;
+  font-size: 10px;
+  text-align: center; /* Center the text below the button */
+}
+
+.navbar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px; /* Adjust space as needed */
+}
+
+
+/* Adjustments for hover effects */
+.navbar-item:hover {
+  background: rgba(255, 255, 255, 0.3); /* Darker on hover */
+}
+
+/* Add a focus style for accessibility */
+.navbar-item:focus {
+  outline: 2px solid white;
+}
