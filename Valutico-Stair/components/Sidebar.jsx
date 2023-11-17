@@ -37,9 +37,11 @@ function Sidebar() {
       <button className="sidebar-button">
         <img src={userIcon} alt="User Profile" />
       </button>
+      <Link to="/QualitativeAssessment">
       <button className="sidebar-button">
         <img src={exportIcon} alt="Export Data" />
       </button>
+      </Link>
       <br></br>
       <br></br>
       <br></br>
