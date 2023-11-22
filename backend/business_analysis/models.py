@@ -36,3 +36,4 @@ class FinancialProjectionsPublicModel(models.Model):
     debt  = ArrayField(models.FloatField(), size=8)
     book_equity  = ArrayField(models.FloatField(), size=8)
     fixed_assets   = ArrayField(models.FloatField(), size=8)
+
