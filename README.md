@@ -21,7 +21,6 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  pip freeze > requirements.txt
   pip install -r requirements.txt
 ```
 Frontend Start
