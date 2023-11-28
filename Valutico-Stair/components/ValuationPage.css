@@ -1,4 +1,4 @@
-.peerSelection {
+.ValuationPage {
     font-family: 'Arial', sans-serif;
     background-color: #333;
     color: white;
@@ -6,7 +6,7 @@
     margin-left :60px
   }
   
-  .peerSelectionHeader {
+  .ValuationPageHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,12 +14,57 @@
     margin-left: -140px;
   }
   
-  .valuationInfo {
+  .ValuationPageInfo {
     text-align: right;
     color: #aaa;
   }
-  
   .searchArea {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    background-color: #fff;
+    flex-grow: 1;
+  }
+  
+  .searchButton {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .searchIconImage {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .advancedSearch1, .advancedSearch2 {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px; /* Adjust space between buttons */
+    margin-top: 0; /* Adjust top margin as needed */
+}
+
+.searchArea {
     display: flex;
     align-items: center; /* Align vertically */
     justify-content: space-between; /* Space between search and buttons */
@@ -78,61 +123,23 @@
   background-color: #666; /* Darker shade for the button */
   color: white;
 }
-  
-  /* ... (rest of your styles) ... */
 
-/* ... existing styles ... */
-
-.tableContainer {
-    margin-top: 20px;
-    overflow-x: auto; /* Allows table to scroll horizontally on small screens */
-    background-color: black; /* Black background for the table container */
-    border-radius: 8px; /* Rounded corners for the container */
-  }
-  
   table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 20px;
   }
   
-  thead {
-    background-color: black; /* Black background for the header */
+  table th, table td {
+    padding: 10px;
+    /* border: 1px solid #fff; or any color as per your theme */
+    text-align: left;
   }
   
-  th {
-    padding: 12px 15px;
-    text-align: center; /* Center align text for headers */
-    background-color: black; /* Black background for headers */
-    color: #ddd; /* Light grey text for headers */
-    border: 1px solid grey; /* Grey borders for headers */
-  }
-  
-  tbody th, tbody td {
-    padding: 12px 15px;
-    text-align: center; /* Center align text for body cells */
-    background-color: black; /* Black background for body cells */
-    color: #fff; /* White text for body cells */
-    border: 1px solid grey; /* Grey borders for body cells */
-  }
-  
-  tbody tr:nth-child(odd), tbody tr:nth-child(even) {
-    background-color: black; /* Maintain black background for all rows */
-  }
-  
-  /* Hover styles for rows */
-  tbody tr:hover {
-    background-color: #1c1c1c; /* Slightly lighter black for hover */
-  }
-  
-  /* Rounded corners for the first and last cells */
-  th:first-child, td:first-child {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-  }
-  
-  th:last-child, td:last-child {
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+  .table-heading {
+    font-weight: bold;
+    background-color: #333; /* or any dark shade for the heading row */
+    color: #fff;
   }
   
   /* Remove any specific alignment for numerical values if you want everything centered */
@@ -188,5 +195,97 @@
     background-color: #f8f8f8; /* Slightly darker background on hover */
   }
     
+/* .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+} */
 
- 
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-container {
+    display: flex;
+    align-items: center; /* Keep items vertically aligned */
+    justify-content: flex-end; /* Align content to the right edge */
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+
+.toggle-label-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between the labels and the toggle */
+  width: 100%; /* Take up the full width of the parent container */
+}
+
+.toggle-label-left {
+  color: white;
+  font-size: 0.9em;
+  /* Positioned to the left */
+}
+
+.toggle-label-right {
+  color: white;
+  font-size: 0.9em;
+  /* Positioned to the right */
+}
+
+.toggle-switch {
+  position: relative;
+  width: 50px; /* Width of the toggle switch */
+  height: 24px; /* Height of the toggle switch */
+  /* Removed margin as it's not needed with space-between */
+}
+
+/* Other styles remain the same */
+
+/* Other styles remain the same */
+
+  
+  .toggle-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+    
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    
+  }
+  
+  .toggle-checkbox:checked + .toggle-slider {
+    background-color: #2196F3;
+  }
+  
+  .toggle-checkbox:checked + .toggle-slider:before {
+    transform: translateX(26px);
+  }
+  

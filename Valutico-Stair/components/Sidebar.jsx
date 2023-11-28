@@ -31,15 +31,19 @@ function Sidebar() {
         <img src={reportIcon} alt="Reports" />
       </button>
       </Link>
+      <Link to= "/ValuationPage">
       <button className="sidebar-button">
         <img src={searchIcon} alt="Search" />
       </button>
+      </Link>
       <button className="sidebar-button">
         <img src={userIcon} alt="User Profile" />
       </button>
+      <Link to="/QualitativeAssessment">
       <button className="sidebar-button">
         <img src={exportIcon} alt="Export Data" />
       </button>
+      </Link>
       <br></br>
       <br></br>
       <br></br>
