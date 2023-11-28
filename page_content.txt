@@ -1,0 +1,2204 @@
+ï»¿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0," />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,IE=EmulateIE8,IE=EmulateIE9,IE=EmulateIE10,IE=EmulateIE11" />
+    <title>Stock Share Price  | Get Quote   | BSE</title>
+    <base href="/">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@bseindiacom" />
+    <meta name="twitter:creator" content="@bseindiateam" />
+    <meta name="twitter:image" content="https://www.bseindia.com/include/images/bselogo.png" />
+
+
+    <link rel="dns-prefetch" href="https://api.bseindia.com">
+    <link rel="dns-prefetch" href="https://cdn-pub.sentifi.com">
+    <link rel="dns-prefetch" href="https://tpc.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://i.marketsmojo.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link href="https://api.bseindia.com" rel="preconnect">
+    <link href="https://cdn-pub.sentifi.com" rel="preconnect">
+    <link href="https://tpc.googlesyndication.com" rel="preconnect">
+    <link href="https://i.marketsmojo.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://www.google-analytics.com" rel="preconnect">
+    <style>
+        a {
+            color: #0089d0;
+            text-decoration: none;
+        }
+
+        a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+            a:link, a:focus, a:visited, a:active, a:hover {
+                text-decoration: none;
+            }
+
+        .sharearea {
+            background-color: #10486b;
+            height: 50px;
+            color: #ffffff;
+        }
+
+            .sharearea a {
+                color: #ffffff;
+            }
+
+        .social-icon {
+            display: inline-block;
+            line-height: 50px;
+            min-width: 20px !important;
+            text-align: center;
+            color: #aeaeae;
+            margin: 0;
+            transition: all 0.4s;
+        }
+
+        .container-fluid {
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x- ng-cloak {
+            display: none !important;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        abbr, address, article, aside, audio, b, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, header, hgroup, html, i, img, ins, kbd, label, legend, li, mark, menu, nav, ol, q, samp, section, small, strong, sub, summary, sup, table, tbody, td, tfoot, thead, time, tr, ul, var, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+        }
+
+        * {
+            outline: none !important;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: myFirstFont;
+            font-size: 13px;
+            background-image: url(/include/images/bg.png);
+        }
+
+        body {
+            font-family: myFirstFont !important;
+            font-size: 13px;
+            line-height: auto;
+            color: #333;
+            background-color: #fff;
+        }
+
+        html {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            font-family: Arial,Helvetica,sans-serif;
+        }
+
+        .logoaddarea {
+           margin-top: 15px !important;
+        }
+
+        html {
+            font-size: 10px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+       
+
+        *:before, *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .btn-group, .btn-group-vertical {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+            .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            .btn-group > .btn:first-child {
+                margin-left: 0;
+            }
+
+            .btn-group > .btn, .btn-group-vertical > .btn {
+                position: relative;
+                float: left;
+            }
+
+        .btn-info {
+            color: #fff;
+        }
+
+        .btn-toplang {
+            color: #ffffff;
+            background: none;
+        }
+
+        input, button, select, textarea {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+
+        .main {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search {
+            position: relative;
+        }
+
+        .dropup, .dropdown {
+            position: relative;
+        }
+
+        button, html input[type="button"], input[type="reset"], input[type="submit"] {
+            -webkit-appearance: button;
+            cursor: pointer;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+
+        button {
+            overflow: visible;
+        }
+
+        button, input, optgroup, select, textarea {
+            margin: 0;
+            font: inherit;
+            color: inherit;
+        }
+
+        .btn .caret {
+            margin-left: 0;
+        }
+
+        .caret {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 2px;
+            vertical-align: middle;
+            border-top: 4px dashed;
+            border-top: 4px solid \9;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after, .modal-header:after, .modal-footer:after {
+            clear: both;
+        }
+
+      
+
+        .row {
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+
+        .newsensexvaluearea {
+            margin: 0 auto;
+           float: none !important;
+        }
+
+        .senseximgold {
+            float: left;
+            margin-right: 15px;
+            margin-top: 6px;
+        }
+
+        .leftone {
+            width: 33.3333%;
+            float: left;
+            padding-left: 2%;
+        }
+
+        .middleone {
+            width: 33.3333%;
+            float: left;
+            text-align: center;
+        }
+
+        .rightone {
+            width: 33.3333%;
+            float: left;
+            padding-right: 2%;
+        }
+
+        .sensextextold {
+            float: left;
+            font-size: 15px;
+            font-weight: 700;
+            color: #010101;
+            margin-top: 4px;
+        }
+
+        .getquotetext {
+            color: #10486b;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+            .getquotetext h1 {
+                color: #10486b;
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-family: myFirstFont !important;
+            }
+
+        .newsensexvalue {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .newsensextext2 {
+            float: left;
+            font-size: 15px;
+            font-weight: bold;
+            color: #de1439;
+            margin-top: -2px;
+        }
+
+        .search input {
+            height: 26px;
+            width: 100%;
+            padding: 0 12px 0 25px;
+            background: white url(/include/images/5JuDgOa.png) 8px 6px no-repeat;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #a8acbc #babdcc #c0c3d2;
+            border-radius: 0px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+            -moz-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+            -ms-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+            -o-box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+            box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+        }
+
+        .search .results {
+            display: none;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            right: 0;
+            z-index: 10000;
+            padding: 0;
+            margin: 0;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #cbcfe2 #c8cee7 #c4c7d7;
+            border-radius: 3px;
+            background-color: #fdfdfd;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #eceef4));
+            background-image: -webkit-linear-gradient(top, #fdfdfd, #eceef4);
+            background-image: -moz-linear-gradient(top, #fdfdfd, #eceef4);
+            background-image: -ms-linear-gradient(top, #fdfdfd, #eceef4);
+            background-image: -o-linear-gradient(top, #fdfdfd, #eceef4);
+            background-image: linear-gradient(top, #fdfdfd, #eceef4);
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            font-family: myFirstFont;
+            font-size: 13px;
+            color: #555860;
+        }
+
+        .greentext {
+            color: #179600;
+        }
+
+        .shareiconblue {
+            color: #10486b !important;
+        }
+
+        .topdatearea {
+           width: 100% !important;
+            float: left;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 2;
+            color: #000000;
+        }
+
+        .getquoteoption {
+            background-color: #373e42;
+            color: #ffffff;
+            height: 26px;
+        }
+
+        .implinkarea {
+            display: inline-block;
+            line-height: 50px;
+            min-width: 36px;
+            text-align: center;
+            color: #ffffff;
+            margin: 0;
+            transition: all 0.4s;
+        }
+
+            .implinkarea a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+        .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-lg-13 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .fa-inverse {
+            color: #ffffff;
+        }
+
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            -text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translate(0, 0);
+        }
+
+        i {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1500;
+            display: none;
+            float: left;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            font-size: 14px;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0, 0, 0, .15);
+            border-radius: 4px;
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        }
+
+            .dropdown-menu > li > a {
+                display: block;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.42857143;
+                color: #333;
+                white-space: nowrap;
+            }
+
+        ul {
+            list-style: none;
+        }
+
+        ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 1024px) {
+            .col-lg-2 {
+                width: 16.66666667%;
+            }
+
+            .col-lg-4 {
+                width: 33.33333333%;
+            }
+
+            .col-lg-6 {
+                width: 50%;
+            }
+
+            .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-13 {
+                float: left;
+            }
+        }
+
+        @media only screen and (min-width: 1023px) {
+
+            .mobiletoparea {
+                display: none;
+            }
+
+            #socialHolder {
+                margin-top: 9px;
+                display: none;
+            }
+
+            .desksocio {
+                margin-top: 0px;
+            }
+
+            .bselogodesk {
+            }
+
+            .googlead {
+            }
+
+            .logoarea {
+                line-height: 50px;
+                margin-top: 25px;
+                margin-bottom: 20px;
+            }
+
+            .getquotearea {
+                padding-top: 20px;
+                margin-bottom: 0px;
+            }
+
+            .searchtexttop {
+                float: left;
+                width: 60%;
+            }
+
+            .dropdowntop {
+                float: right;
+                width: 40%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .col-md-3 {
+                width: 25%;
+            }
+
+            .col-md-2 {
+                width: 16.66666667%;
+            }
+
+            .col-md-9 {
+                width: 75%;
+            }
+
+            .col-md-8 {
+                width: 66.66666667%;
+            }
+
+            .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+                float: left;
+            }
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+            body {
+                font-family: myFirstFont;
+                font-size: 13px;
+            }
+
+            .mobiletoparea {
+                padding-top: 10px;
+                background-color: #cccccc;
+                padding-bottom: 10px;
+                margin-bottom: 5px;
+            }
+
+            #socialHolder {
+                margin-top: 0px;
+            }
+
+            .sharearea {
+                background-color: #10486b;
+                height: 50px;
+                color: #ffffff;
+                display: none;
+            }
+
+            .desksocio {
+                margin-top: 9px;
+                display: none;
+            }
+
+            .googlead {
+            }
+
+            .logoarea {
+                line-height: 50px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .bselogodesk {
+                display: none;
+            }
+
+            .newsensexvaluearea {
+                margin: 0 auto;
+                float: right;
+                width: 100%;
+            }
+
+            .topdatearea {
+                width: 100%;
+                float: left;
+                font-size: 13px;
+                font-weight: normal;
+                line-height: 2;
+                color: #000000;
+            }
+
+            .getquotearea {
+                padding-top: 0px;
+                float: left;
+                margin-bottom: 20px;
+            }
+
+            .searchtexttop {
+                float: left;
+                width: 50%;
+            }
+
+            .dropdowntop {
+                float: right;
+                width: 50%;
+            }
+        }
+
+        #chartdiv {
+            width: 100%;
+            height: 270px;
+            background-color: white;
+        }
+
+        .amcharts-center-div {
+            padding-left: 1px !important;
+        }
+
+        .amChartsLegend {
+            background-color: #e9edf0;
+        }
+
+        .loadCls {
+            margin-left: 50%;
+            margin-top: 20%;
+        }
+
+        #DivStreamer {
+            /*position: absolute;
+            z-index: 9;*/
+            /*background-color: #f1f1f1;
+            border: 1px solid #d3d3d3;
+            text-align: center;*/
+        }
+
+        #tableStreamer {
+            padding: 10px;
+            cursor: move;
+            z-index: 10;
+            background-color: #2196F3;
+            color: #fff;
+        }
+
+        .bordersv{
+            border-left: 1px solid #000;
+        }
+
+          @media (max-width: 768px) {
+               .bordersv{
+            border-left: none;
+        }
+        }
+
+        /*#legend {
+            margin: 5px 5px 5px 5px;
+        }
+
+        #legend .item {
+            float: left;
+            margin-right: 15px;
+        }
+
+        #legend .item .marker {
+            width: 15px;
+            height: 15px;
+            float: right;
+            margin: 2px 10px 0 0;
+        }
+
+        #legend .item .line {
+            margin: 0 0 5px 26px;
+        }*/
+    </style>
+ <script>
+            var a = new Date();
+            var mon = a.getMonth();
+            var mint = 30;
+            mon = mon + 1;
+            if (a.getMinutes() % 30 == 0) {
+                mint = a.getMinutes();
+            }
+            var time = a.getDate() + "" + mon + "" + a.getFullYear() + "" + a.getHours() + "" + mint;
+            document.write("<script type='text/javascript' src='version.js?v=" + time + "'><\/script>");
+        </script>
+    <script>
+        document.write('<link href="/include/css/bootstrap.css?v=' + version_js + '" rel="stylesheet" />');
+    </script>
+
+    <!--<script>
+        //document.getElementById('divmain').focus();
+        window.location.hash = '#equity';
+    </script>-->
+    <!--Organization Schema-->
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+
+        "@type": "WebPage",
+        "name": "Bombay Stock Exchange, India stock Exchange, share markets, stock markets, Sensex today, live stock price, share market in india, bse, bse india, live charts, equity markets, share market news, IPO, Public Issues, IPO listings, Bonds, Debentures, currency market, currency exchange, USD INR, rupee dollar, company news, company results, corporate actions, corporate announcements, commodity exchange, commodity derivatives, interest rate derivatives",
+        "description": "BSE (formerly Bombay Stock Exchange) - LIVE stock/share market updates from Asia's premier stock exchange. Get all the live S&P BSE SENSEX, real time stock/share prices, bse indices, company news, results, currency and commodity derivatives",
+        "url" : "https://www.bseindia.com/",
+
+        "publisher": {
+        "@type": "Organization",
+        "name": "BSEINDIA",
+        "url" : "https://www.bseindia.com/",
+
+        "logo" : {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.bseindia.com/include/images/bselogo.png"
+
+        }
+        }
+        }
+    </script>
+
+    <!--Organization Schema-->
+
+    <script type="text/javascript" src="/include/js/font-size1.js"></script>
+</head>
+
+<body>
+    <div ng-app="getquote" id="getquoteheader" ng-controller="headerController" ng-init="fnLeftmenu()" ng-cloak>
+        <div id="topDiv">
+
+            <div class="container-fluid aplusarea">
+                <div class="row">
+
+                    <div id="SkipContents" class="col-lg-12 text-right skiparea">
+                        <a href="#skipcontent">Skip to main content</a>
+                        <ul style="list-style: none; display: inline;">
+                            <li style="display:inline; padding-left:5px;">
+                                <a href="javascript:highContrast()" class="link_contrast1">High Contrast</a> | <a href="javascript:normalContrast()" class="link_contrast_reset">Reset</a>
+
+                            </li>
+                            <li style="display:inline; padding-left:5px;"><a href="#Skip" title="Decrease font size" onclick="set_font_size(&#39;decrease&#39;)">-A</a></li>
+                            <li style="display: inline; padding-left: 5px;"><a href="#Skip" title="Reset font size" onclick="set_font_size(&#39;amit&#39;)">A</a></li>
+                            <li style="display: inline; padding-left: 5px;"><a href="#Skip" title="Increase font size" onclick="set_font_size(&#39;increase&#39;)">+A</a></li>
+                            <!--<li style="display: inline; padding-left: 5px;"><a href="javascript:void(0);" title="Reset font size" onclick="set_font_size(&#39;&#39;)">A</a></li>
+            <li style="display: inline; padding-left: 5px;"><a href="javascript:void(0);" title="Increase font size" onclick="set_font_size(&#39;increase&#39;)">+A</a></li>-->
+                        </ul>
+                    </div>
+                    <!--fa fa-youtube-->
+                </div>
+            </div>
+
+            <div class="container-fluid mobiletoparea">
+                <div class="row">
+                    <div class="leftone">
+                        <div id="socialHolder">
+                            <div id="socialShare" class="btn-group share-group">
+                                <a data-bs-toggle="dropdown" class="shareicon"><i class="fa fa-share-alt fa-inverse shareiconblue"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://www.facebook.com/bseindia" target="_blank" class="social-icon" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="Display(1);" class="social-icon" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/bombay-stock-exchange-limited?trk=cp_followed_name_bombay-stock-exchange-limited" target="_blank" class="social-icon" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://plus.google.com/+BSEworldBSEIndia" target="_blank" class="social-icon" title="Google+"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li><a data-bs-toggle="modal" data-bs-target="#rss1" href="#" class="social-icon" title="RSS"><i class="fa fa-rss"></i></a></li>
+                                    <li>
+                                        <a href="https://www.youtube.com/user/BSEworld" target="_blank" class="social-icon" title="Youtube"><i class="fa fa-youtube"></i></a>
+                                    </li>
+                                    <li><a href="https://wa.me/918369998544?text=bse" target="_blank" class="social-icon" title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
+                                    <li><a href="https://www.instagram.com/bseindia" target="_blank" class="social-icon" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middleone"><a href="/index.html" target="_self"><img src="/include/images/bselogo.png" class="bselogomob" alt="BSEINDIA" title="BSEINDIA" border="0" /></a></div>
+                      <div class="rightone text-end">
+                    <div class="dropdown implinkarea" style="line-height: 0 !important;">
+                        <button class="btn btn-toplang dropdown-toggle" style="color: #10486b; font-weight:bold;padding:6px 0px !important;" type="button" data-bs-toggle="dropdown" aria-expanded="false">Group Websites</button>
+                        <ul class="dropdown-menu" style="right: 0 !important; left: inherit !important;">
+                        <li><a href="/static/markets/mutualfunds/BSEStarMF.aspx" target="_blank">BSE STAR MF</a></li>
+                        <li><a href="https://www.bsebti.com/" target="_blank">BSE Institute Ltd</a></li>
+                        <li><a href="https://www.bsesme.com/" target="_blank">BSE SME Platform</a></li>
+                        <li><a href="https://www.startupsbse.com/" target="_blank">BSE Startups</a></li>
+                        <!--  <li class="divider"></li> -->
+                        <li><a href="https://www.bsehitech.com/" target="_blank">BSE Hi-Tech</a></li>
+                        <li><a href="https://www.bseipf.com/" target="_blank">BSE IPF</a></li>
+                        <li><a href="https://www.bsetech.in/" target="_blank">BSE Technologies</a></li>
+                        <li><a href="https://www.bsebeam.com/" target="_blank">BSE BEAM </a></li>
+						<li><a href="https://www.bsesocialstockexchange.com/" target="_blank">BSE SSE </a></li>
+
+                        <li><a href="https://www.bseasl.com/" target="_blank">BASL</a></li>
+
+                        <li><a href="https://www.cdslindia.com/index.html" target="_blank">CDSL</a></li>
+                        <li><a href="https://www.hpxindia.com/" target="_blank">HPX</a></li>
+                        <li><a href="https://www.icclindia.com/" target="_blank">ICCL</a></li>
+                        <li><a href="https://www.indiainx.com/" target="_blank">India INX</a></li>
+                        <li><a href="https://www.indiaicc.com/" target="_blank">India ICC</a></li>
+
+                        <li><a href="/members/members_portal.aspx" target="_blank">Members Portal</a></li>
+                        <!--<li><a href="https://www.bseindia.com/rgess/" target="_blank">RGESS</a></li>-->
+                        <!--<li><a href="https://www.bseindia.com/bsecmieindices/" target="_blank">BSE CMIE Indices</a></li>-->
+                        <!--<li><a href="https://www.bsesammaan.com/" target="_blank">BSE Sammaan</a></li>-->
+                    </ul>
+                    </div>
+                    <!--<div><a href="https://www.bseindia.com/index.htm" target="_blank" style="color:#ff0000;">BSE Old Site--</a></div>-->
+                </div>
+                </div>
+            </div>
+
+
+
+            <div class="container-fluid sharearea">
+                <div class="row">
+                    <div class="col-md-3 sociolinkarea1024">
+                        <div id="socialHolder">
+                            <div id="socialShare" class="btn-group share-group">
+                                <a data-bs-toggle="dropdown" class="btn btn-info"><i class="fa fa-share-alt fa-inverse"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://www.facebook.com/bseindia" target="_blank" class="social-icon" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="social-icon" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/bombay-stock-exchange-limited?trk=cp_followed_name_bombay-stock-exchange-limited" target="_blank" class="social-icon" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://plus.google.com/+BSEworldBSEIndia" target="_blank" class="social-icon" title="Instagram"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a data-bs-toggle="modal" data-bs-target="#rss1" href="#" class="social-icon" title="RSS"><i class="fa fa-rss"></i></a></li>
+                                    <li><a href="https://www.youtube.com/user/BSEworld" target="_blank" class="social-icon" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                                    <li><a href="https://wa.me/918369998544?text=bse" target="_blank" class="social-icon" title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
+                                    <li><a href="https://www.instagram.com/bseindia" target="_blank" class="social-icon" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="desksocio">
+                            <ul>
+                                <li><a aria-label="Facebook" href="https://www.facebook.com/bseindia" target="_blank" class="social-icon" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a aria-label="twitter" href="#" onclick="Display(1);" class="social-icon" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a aria-label="Linkedin" href="https://www.linkedin.com/company/bombay-stock-exchange-limited?trk=cp_followed_name_bombay-stock-exchange-limited" target="_blank" class="social-icon" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+
+                                <li><a aria-label="RSS" data-bs-toggle="modal" data-bs-target="#rss1" href="#" class="social-icon" title="RSS"><i class="fa fa-rss"></i></a></li>
+                                <li><a aria-label="Youtube" href="https://www.youtube.com/user/BSEworld" target="_blank" class="social-icon" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                                <li><a aria-label="WhatsApp" href="https://wa.me/918369998544?text=bse" target="_blank" class="social-icon" title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
+                                <li><a aria-label="Instagram" href="https://www.instagram.com/bseindia" target="_blank" class="social-icon" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-9 rightoparea1024">
+                        <div class="col-md-8">
+                            <div class="implinkarea">
+                                <a href="/markets/MarketInfo/NoticesCirculars.aspx?id=0&txtscripcd=&pagecont=&subject=" target="_self">Notices</a>  |
+                                <a href="/markets/MarketInfo/MediaRelease.aspx" target="_self">Media Release</a>  |
+                                <a href="/static/markets/marketinfo/listholi.aspx" target="_self">Trading Holidays</a>  |
+                                <a href="https://bseplus.bseindia.com/" target="_blank">BSEPlus</a>  |
+                                <a href="https://www.bsesme.com/" target="_blank">BSE SME</a>  |
+                                <a href="https://listing.bseindia.com/Payments/PaymentDetails.aspx" target="_blank" style="color:#ffff00;">Payments to BSE</a>  |
+                                <a href="/static/about/contact_us.aspx" target="_self">Contact us</a> |
+                                <a href="#" target="_self" onclick="OpenPopupWindow()">FeedBack</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 googlead">
+                            <div class="dropdown implinkarea">
+                                <button class="btn btn-toplang dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select Language</button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://hindi.bseindia.com/" target="_blank">Hindi</a></li>
+                                    <li><a href="https://marathi.bseindia.com/" target="_blank">Marathi</a></li>
+                                    <li><a href="https://gujarati.bseindia.com/" target="_blank">Gujarati</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 googlead">
+                            <div class="dropdown implinkarea">
+                                <button class="btn btn-toplang dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Group Websites</button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/static/markets/mutualfunds/BSEStarMF.aspx" target="_blank">BSE STAR MF</a></li>
+                        <li><a href="https://www.bsebti.com/" target="_blank">BSE Institute Ltd</a></li>
+                        <li><a href="https://www.bsesme.com/" target="_blank">BSE SME Platform</a></li>
+                        <li><a href="https://www.startupsbse.com/" target="_blank">BSE Startups</a></li>
+                        <!--  <li class="divider"></li> -->
+                        <li><a href="https://www.bsehitech.com/" target="_blank">BSE Hi-Tech</a></li>
+                        <li><a href="https://www.bseipf.com/" target="_blank">BSE IPF</a></li>
+                        <li><a href="https://www.bsetech.in/" target="_blank">BSE Technologies</a></li>
+                        <li><a href="https://www.bsebeam.com/" target="_blank">BSE BEAM </a></li>
+						<li><a href="https://www.bsesocialstockexchange.com/" target="_blank">BSE SSE </a></li>
+
+                        <li><a href="https://www.bseasl.com/" target="_blank">BASL</a></li>
+
+                        <li><a href="https://www.cdslindia.com/index.html" target="_blank">CDSL</a></li>
+                        <li><a href="https://www.hpxindia.com/" target="_blank">HPX</a></li>
+                        <li><a href="https://www.icclindia.com/" target="_blank">ICCL</a></li>
+                        <li><a href="https://www.indiainx.com/" target="_blank">India INX</a></li>
+                        <li><a href="https://www.indiaicc.com/" target="_blank">India ICC</a></li>
+
+                        <li><a href="/members/members_portal.aspx" target="_blank">Members Portal</a></li>
+                                    <!--<li><a href="https://www.bseindia.com/rgess/" target="_blank">RGESS</a></li>-->
+                                    <!--<li><a href="https://www.bseindia.com/bsecmieindices/" target="_blank">BSE CMIE Indices</a></li>-->
+                                    <!--<li><a href="https://www.bsesammaan.com/" target="_blank">BSE Sammaan</a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 logoarea text-center"><a href="/index.html" target="_self"><img src="/include/images/bselogo.png" class="bselogodesk" alt="BSE EXPERIENCE THE NEW" title="BSEINDIA" border="0" /></a></div>
+
+                    <div class="col-lg-6 logoaddarea topsensexarea" ng-init="SensexTable()">
+                        <div class="newsensexvaluearea">
+
+                            <table cellpadding="5" align="center" cellspacing="10" style="margin:0 auto;" border="0">
+                                <tr>
+                                    <td> <div class="senseximgold"><a href="/sensex/code/16/" target="_self"><img src="/include/images/spbse.png" class="img-responsive" alt="S&P BSE SENSEX" title="S&P BSE SENSEX" border="0" /></a> </div></td>
+                                    <td width="1px" bgcolor="#aeaeae"></td>
+                                    <td>
+                                        <div ng-if="loader.toploading=='loading'"><img src="/include/images/loader.gif" /></div>
+                                        <div class="sensextextold" ng-cloak ng-if="loader.toploading=='loaded'">
+                                            <div class="newsensexvalue" id="tdsp">{{HeaderData[0].ltp}}</div>
+                                            <div class="newsensextext2">
+                                                <div class="redtext" ng-if="HeaderData[0].chg < 0" id="tdsc">{{HeaderData[0].chg}} {{HeaderData[0].perchg}}%</div>
+                                                <div class="greentext" ng-if="HeaderData[0].chg >= 0" id="tdsc">{{HeaderData[0].chg}} {{HeaderData[0].perchg}}%</div>
+                                                <div class="topdatearea">{{HeaderData[0].dttm}} | <strong ng-if="HeaderData[0].F == '0'" class="greentext">Open</strong><strong ng-if="HeaderData[0].F == '1'" class="greentext">Pre-open</strong><strong ng-if="HeaderData[0].F == '2'" class="redtext">Close</strong></div>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="1px" bgcolor="#aeaeae" ng-if="HeaderData[0].iclsflag == 1"></td>
+                                    <td ng-if="HeaderData[0].iclsflag == 1">
+                                        <div ng-if="loader.toploading=='loading'"><img src="/include/images/loader.gif" /></div>
+                                        <div class="sensextextold" ng-cloak ng-if="loader.toploading=='loaded'">
+                                            <div class="newsensexvalue" id="tdindisp">{{HeaderData[0].iclsprice}} <font style="font-size:10px; font-weight:normal;">(Indicative Close)</font></div>
+                                            <div class="newsensextext2">
+                                                <div class="redtext" ng-if="HeaderData[0].iclsChg < 0" id="tdsc">{{HeaderData[0].iclsChg}} {{HeaderData[0].iclsPchg}}%</div>
+                                                <div class="greentext" ng-if="HeaderData[0].iclsChg >= 0" id="tdsc">{{HeaderData[0].iclsChg}} {{HeaderData[0].iclsPchg}}%</div>
+                                                <div class="topdatearea">{{HeaderData[0].dttm}} </div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <!--<td width="1px" bgcolor="#aeaeae"></td>
+    <td>
+        <div class="sensextextold">
+            <div class="newsensexvalue">63,521.42 <font style="font-size:10px; font-weight:normal;">(Indicative Close)</font></div>
+            <div class="newsensextext2">
+                <div class="greentext">+899.18 +1.48%</div>
+
+                <div class="topdatearea">01 Jun 23 | 15:10 </div>
+            </div>
+        </div>
+    </td>-->
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-left getquotearea">
+                        <div class="getquotetext"><h1>Get Quote</h1></div>
+                        <div>
+                            <section class="main">
+                                <form class="search">
+                                    <div id="SearchQuotediv" class="searchtexttop">
+                                        <input id="getquotesearch" type="text" name="q" placeholder="Enter Security Name / Code / ID / ISIN" ng-keyup="GetQuoteTable($event)" maxlength="50" />
+
+                                        <ul id="ulSearchQuote" class="results" ng-bind-html="trustAsHtml(SearchQuote)"></ul>
+                                    </div>
+                                    <div class="dropdowntop">
+                                        <label class="sr-only" for="ddltype">quote options</label>
+                                        <select id="ddltype" name="" class="getquoteoption" ng-change="ClearList()" ng-model="selectedseg">
+                                            <option value="EQ">Equity</option>
+                                            <option value="DR">Derivatives</option>
+                                            <option value="MF">MF/ETFs</option>
+                                            <option value="DB">Debt/Others</option>
+                                            <option value="CR">Currency Derivatives</option>
+                                            <option value="CO">Commodity Derivatives</option>
+                                            <option value="EGR">Electronic Gold Receipts</option>
+                                            <option value="HS">Hybrid Security</option>
+                                            <option value="MB">Municipal Bonds</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-if="HeaderData[0].msg!=''"><div id="divmsg" class="col-md-12" align="center"><marquee width="100%" style="color: #e60000">{{HeaderData[0].msg}}</marquee></div></div>
+
+            </div>
+            <!--rss feed-->
+            <div class="modal fade" id="rss1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h1 class="modal-title modalpopuphead" id="myModalLabel">BSE RSS</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            RSS stands for Really Simple Syndication. RSS feed is a XML file that provides summaries, including links to the full versions of the content.It is available through RSS feed reader or through some browsers. It will show you what's new since the last time you checked the feed, without having to visit the website.
+                            <br /><br />
+                            <strong>BSE Notices RSS</strong><br /><br />
+                            This RSS feed allows you to stay up to date with the latest Notices updated on the site.<br /><br />
+                            <strong>How to Subscribe this feed?</strong><br /><br />
+                            <strong>You can subscribe to this feed by using any of the following options:</strong><br /><br />
+                            <ul class="ullist">
+                                <li>If you have RSS reader, Please Cut and Paste the URL <a href="/data/xml/notices.xml" target="_self">www.bseindia.com/data/xml/notices.xml</a> in your RSS Reader.</li>
+                                <li>Download any online RSS reader of your choice.</li>
+                            </ul><br />
+                            <strong>SENSEX RSS</strong><br /><br />
+                            This is an RSS feed from the Bombay Stock Exchange website. This RSS feeds allow you to stay up to date with the latest SENSEX values on continuous basis.<br /><br />
+                            <strong>Subscribe to this feed</strong><br /><br />
+                            To subscribe to it, you will need a RSS Reader. You can subscribe to this RSS feed, Please Cut and Paste the URL <a href="https://www.bseindia.com/data/xml/sensexrss.xml">www.bseindia.com/data/xml/sensexrss.xml</a> in your RSS Reader
+                            <br /><br />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--rss feed-->
+
+        </div>
+        <link href="include/css/style.css" type="text/css" rel="stylesheet">
+        <link href="include/css/font-awesome.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="include/css/design.css">
+        <link rel="stylesheet" href="/include/css/style_high.css">
+        <link rel="stylesheet" href="/include/css/highcontra.css">
+        <script src="include/js/jquerylatest.js"></script>
+        <script src="/include/js/jqueryuilatest.js?v=1"></script>
+        <link href="include/css/jquery-ui-1.12.1.min.css" rel="stylesheet" />
+        <script src="D90/Angular/angular.latest.js?v=2"></script>
+        <script src="D90/Angular/angular-route.latest.js?v=2"></script>
+        <script src="/include/js/highcontrast.js"></script>
+        <script src="/include/js/highcommon.js"></script>
+        <script>
+
+            var strRawUrl = "";
+            var strkeywords = "";
+            var strDescp = "";
+            var strTitle = "";
+            strRawUrl = window.location.pathname;
+
+            var strArray = strRawUrl.split('/');
+
+        </script>
+
+
+
+        <script type="text/javascript">
+
+            function Display(type) {
+                if (type == 1)
+                    window.open("/static/about/twitter.htm", "mem", "toolbar=no,left=0,location=no,menubar=no,scrollbars=yes,width=999,height=400,top=150,left=200")
+                else if (type == 2)
+                    window.open("/static/about/disclaimer.htm", "mem", "toolbar=no,left=0,location=no,menubar=no,scrollbars=yes,width=640,height=300,top=150,left=200")
+                else if (type == 3)
+                    window.open("/static/about/rss.htm", "mem", "toolbar=no,left=0,location=no,menubar=no,scrollbars=yes,width=640,height=300,top=150,left=200")
+                else if (type == 4)
+                    window.open("/static/about/contact_us.htm", "mem", "toolbar=no,left=0,location=no,menubar=no,scrollbars=yes,width=999,height=350,top=150,left=200")
+                else if (type == 5)
+                    window.open("/static/about/brokers.htm", "mem", "toolbar=no,left=0,location=no,menubar=no,scrollbars=yes,width=660,height=800,top=100,left=400"
+                    )
+                else if (type == 6)
+                    window.open("/markets/MedianResp.aspx", "mem", "toolbar=no,left=0,location=no,menubar=no,scrollbars=no,width=450,height=260,top=100,left=400")
+                else if (type == 7)
+                    window.open("https://www.bseindia.com/static/about/bse_privacy_policy.htm", "mem", "toolbar=no,left=0,location=no,menubar=no,scrollbars=yes,width=640,height=300,top=150,left=200")
+                return false;
+            }
+        </script>
+        <script language="javascript">
+            function OpenPopupWindow() {
+                var userWidth = screen.availWidth;
+                var userHeight = screen.availHeight;
+                leftPos = (userWidth - 900) / 2,
+                    topPos = (userHeight - 600) / 2;
+                settings = 'modal,scrollBars=no,resizable=no,toolbar=no,menubar=no,location=no,directories=no,left=' + leftPos + ',top=' + topPos + ',width=900, height=600';
+                window.open("/static/about/Feed.aspx", "popup", settings);
+            }
+        </script>
+        <script>
+            var sNew = document.createElement("script");
+            sNew.type = "text/javascript";
+            sNew.src = "include/js/keynavigate_new.js?v1=" + version_js;
+            document.getElementsByTagName("head")[0].appendChild(sNew);
+        </script>
+        <script>
+            var sNew = document.createElement("script");
+            sNew.type = "text/javascript";
+            sNew.src = "include/js/equitynew.js?v2=" + version_js;
+            document.getElementsByTagName("head")[0].appendChild(sNew);
+
+        </script>
+
+        <div id="Divhomemenu" ng-include="'/D90/Header/menu.html'"></div>
+
+        <div id="equity1"></div>
+        <script>
+            $(document).ready(function () {
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $("#equity1").offset().top
+                }, 0);
+            });
+        </script>
+        <div ng-init="fnCompanydata()">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 marketstartarea googlead">
+                        <div align="center" class="largetable">
+                            <!-- /35735749/Getquote_Top -->
+                            <!--<div>
+                            <a href="https://www.youtube.com/watch?v=mcv6UhU-3p8 " target="_blank"><img src="include/images/RIL728x90.jpg"></a>
+
+                        </div>-->
+
+                            <div id='div-gpt-ad-1565080708958-0'>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="modal fade" id="catinfo" tabindex="-1" style="position:absolute" role="dialog" aria-labelledby="myModalLabelcatinfo"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h4 class="modal-title" id="myModalLabelcatinfo"></h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" height="10px;">
+                                            <div class="col-lg-12">
+                                                <div class="blueheading" style="text-align: left;">
+                                                    <div class="home_widget">
+                                                        <h1 class="stockreach_title">Industry Classification of {{ScripHeaderData.Cmpname.FullN}}({{CompData.SecurityCode}})</h1>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="3" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdcolumn" align="left">Sector</td>
+                                        <td class="tdcolumn" align="right">:</td>
+                                        <td class="tdcolumn ng-binding" align="left">{{CompData.Sector}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td height="1px" colspan="3" bgcolor="#aeaeae"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tdcolumn" align="left">Industry</td>
+                                        <td class="tdcolumn" align="right">:</td>
+                                        <td class="tdcolumn ng-binding" align="left">{{CompData.IndustryNew}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td height="1px" colspan="3" bgcolor="#aeaeae"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tdcolumn" align="left">Industry Group</td>
+                                        <td class="tdcolumn" align="right">:</td>
+                                        <td class="tdcolumn ng-binding" align="left">{{CompData.IGroup}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td height="1px" colspan="3" bgcolor="#aeaeae"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tdcolumn" align="left">Industry Sub Group</td>
+                                        <td class="tdcolumn" align="right">:</td>
+                                        <td class="tdcolumn ng-binding" align="left">{{CompData.ISubGroup}}</td>
+                                    </tr>
+
+
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--TOP GOOGLE AD-->
+            <!--HighLow-->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h1 class="modal-title modalpopuphead" id="myModalLabel3">
+                                High Lows
+                            </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" ng-init="fnHighlow()">
+                            <div class="gqmddiv" ng-cloak>
+                                <div ng-if="loader.HLState=='loading'"><img src="/include/images/loader.gif" /></div>
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0" ng-if="loader.HLState=='loaded'">
+                                    <tbody>
+                                        <tr>
+                                            <td class=" blueheadertd ng-binding" colspan="2" height="53px;" align="left">
+                                                High Lows
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tdcolumn" align="left">52 Week High (adjusted)</td>
+                                            <td class="tdcolumn ng-binding" align="right">{{HLdata.Fifty2WkHigh_adj|number:2}}{{HLdata.Fifty2WkHigh_adjDt}}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tdcolumn" align="left">52 Week Low (adjusted)</td>
+                                            <td class="tdcolumn ng-binding" align="right">{{HLdata.Fifty2WkLow_adj|number:2}}{{HLdata.Fifty2WkLow_adjDt}}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tdcolumn" align="left">52 Week High (Unadjusted)</td>
+                                            <td class="tdcolumn ng-binding" align="right">{{HLdata.Fifty2WkHigh_unadj}}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tdcolumn" align="left">52 Week Low (Unadjusted)</td>
+                                            <td class="tdcolumn ng-binding" align="right">{{HLdata.Fifty2WkLow_unadj}}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tdcolumn" align="left">Month H/L</td>
+                                            <td class="tdcolumn ng-binding" align="right">{{HLdata.MonthHighLow}}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tdcolumn" align="left">Week H/L</td>
+                                            <td class="tdcolumn ng-binding" align="right">{{HLdata.WeekHighLow}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--HighLow-->
+            <!--notifications-->
+
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <h1 class="modal-title modalpopuphead" id="exampleModalLabel">
+                            Notification
+                        </h1>
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        </div>
+                        <div class="modal-body">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#aeaeae">
+                                            <div ng-show="loader.NTloading"><img src="/include/images/loader.gif" /></div>
+                                            <table width="100%" border="0" cellspacing="1" cellpadding="4" ng-show="loader.NTloaded">
+
+                                                <tbody>
+                                                    <tr ng-repeat="notif in Notiftn">
+                                                        <td align="left" class="tdcolumn"><a target="_blank" href="{{notif.SEOUrl|formatURL|aspxToHtml}}">{{notif.Disptxt}}</a></td>
+                                                        <td align="right" class="tdcolumn" style="white-space:nowrap">{{notif.Date}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div class="modal fade" id="epsifo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <h4 class="modal-title" id="myModalLabelPE"></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <strong>EPS (TTM) â Earnings Per Share (Trailing Twelve Months)</strong><br />
+                                Formula = Net Profit attributable to Equity Shareholders (TTM) / No. of Equity Shares<br /><br />
+
+                                <strong>CEPS (TTM) â Cash Earnings Per Share (Trailing Twelve Months)</strong><br />
+                                Formula = Net profit attributable to Equity Shareholders (TTM) + Depreciation (TTM) /No. of Equity Shares<br /><br />
+
+                                <strong>PE â Price Earnings</strong><br />
+                                Formula = Last Traded Price / EPS(TTM)<br /><br />
+
+                                <strong>PB â Price to Book Value</strong><br />
+                                Formula = Last Traded Price / Book Value per Share<br />
+                                Where Book Value per Share = (Total Assets -Total Liabilities)/ No. of Equity Shares outstanding<br /><br />
+
+                                <strong>ROE â Return on Equity</strong><br />
+                                Formula = Profit Attributable to Equity Shareholders / Shareholder's Fund<br />
+                                Where Profit Attributable to Equity Shareholders does not include profit attributable to minority shareholders) and<br />
+                                Shareholder's Fund = Equity Share Capital + Other Equity (Does not include Minority Interest)<br /><br />
+
+                                <font color="red">Note - All the above-mentioned Ratios are based on latest available Standalone Results.</font>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="ssdtext" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <h4 class="modal-title" id="myModalLabelssd"></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td bgcolor="#aeaeae">
+                                                <table width="100%" border="0" cellspacing="1" cellpadding="4">
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" class="tdcolumn">Name of Compliance Officer under PIT Regulations</td>
+                                                            <td align="left" class="tdcolumn" style="white-space:nowrap">{{CompData.COName}}</td>
+                                                        </tr>
+                                                        <!--<tr>
+                                                            <td align="left" class="tdcolumn">Contact No. </td>
+                                                            <td align="left" class="tdcolumn" style="white-space:nowrap">{{CompData.Contact}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" class="tdcolumn">Email ID</td>
+                                                            <td align="left" class="tdcolumn" style="white-space:nowrap">{{CompData.Email}}</td>
+                                                        </tr>-->
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid getquotetopvaluearea whitebox" ng-init="fn_ScripHeaderData()">
+                    <div>
+                        <div class="row getquotetoppad">
+                            <div class="col-lg-8 eqvaluefloat">
+                                <div class="col-lg-12">
+                                    <div id="divremarks" style="text-align: left; display:none"></div>
+                                    <div class="blueheading" style="text-align: left;">
+                                        <div class="home_widget">
+                                            <h1 class="stockreach_title">{{ScripHeaderData.Cmpname.FullN}}</h1>
+                                            <div class="notificationicon" ng-click="fnNotiftn()" ng-hide="ScripHeaderData.Header.Noticecnt == 0" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                {{ScripHeaderData.Header.Noticecnt}}
+                                            </div>
+                                            <div ng-if="CompData.sddscrip == null || CompData.sddscrip == ''" style="color: #333;font-size:13px; padding-top:20px;width:100%;">({{CompData.SecurityId}}  |  {{CompData.SecurityCode}}  |  {{CompData.ISIN}})</div>
+                                            <div ng-if="CompData.sddscrip != null && CompData.sddscrip != ''" style="color: #333;font-size:13px; padding-top:5px;width:100%;">({{CompData.SecurityId}}  |  {{CompData.SecurityCode}}  |  {{CompData.ISIN}} |  {{CompData.SDD}}|  {{CompData.COdetails}}<a data-bs-toggle="modal" data-bs-target="#ssdtext" class="social-icon" title="SSD"><img src="/include/images/iicon.png" alt="" title="" border="0" hspace="0" vspace="0"></a>)</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div align="left" style="float:left; width:100%;">
+                                        <span class="viewsensexvalue redtext" ng-if="ScripHeaderData.CurrRate.Chg < 0"><strong id="idcrval" class="ng-binding">{{ScripHeaderData.CurrRate.LTP}}</strong></span>
+                                        <span class="viewsensexvalue greentext" ng-if="ScripHeaderData.CurrRate.Chg > 0"><strong id="idcrval" class="ng-binding">{{ScripHeaderData.CurrRate.LTP}}</strong></span>
+                                        <span class="viewsensexvalue" ng-if="ScripHeaderData.CurrRate.Chg == 0"><strong id="idcrval" class="ng-binding">{{ScripHeaderData.CurrRate.LTP}}</strong></span>
+                                        <span class="sensexbluetext"><strong>{{ScripHeaderData.CurrRate.Chg}}</strong> ({{ScripHeaderData.CurrRate.PcChg}}%)<span ng-if="ScripHeaderData.CurrRate.IssueChgPC != null && ScripHeaderData.CurrRate.IssueChgVal != ''"> <img src="/include/images/iicon.png" alt="" title="Change and Change % is w.r.t. Open Price" border="0" hspace="0" vspace="0"></span></span>
+                                        <span class="sensexbluetext" ng-if="ScripHeaderData.CurrRate.IssueChgPC != null && ScripHeaderData.CurrRate.IssueChgVal != ''"><span> | </span><strong>{{ScripHeaderData.CurrRate.IssueChgVal}}</strong> ({{ScripHeaderData.CurrRate.IssueChgPC}}%) <img src="/include/images/iicon.png" alt="" title="Change and Change % is w.r.t. Issue Price" border="0" hspace="0" vspace="0"><br /></span>
+                                        <!--<span class="sensexredtext">Trading Restricted - On account of GSM</span>-->
+                                        <span class="sensexredtext" ng-if="ScripHeaderData.Header.IDB_DisplayText != null && ScripHeaderData.Header.IDB_DisplayText != '' ">{{ScripHeaderData.Header.IDB_DisplayText}}<br /></span>
+                                        <span ng-if="ScripHeaderData.Header.PRE_OPEN_NO_BIDS != null && ScripHeaderData.Header.PRE_OPEN_NO_BIDS != '' ">{{ScripHeaderData.Header.PRE_OPEN_NO_BIDS}}<br /></span>
+                                        <span ng-if="ScripHeaderData.Header.PRE_OPEN_NO_I_PRICE != null && ScripHeaderData.Header.PRE_OPEN_NO_I_PRICE != '' ">{{ScripHeaderData.Header.PRE_OPEN_NO_I_PRICE}}<br /></span>
+                                        <span ng-if="ScripHeaderData.Header.PRE_OPEN_I_PRICE != null && ScripHeaderData.Header.PRE_OPEN_I_PRICE != '' ">{{ScripHeaderData.Header.PRE_OPEN_I_PRICE}}<br /></span>
+                                        <span ng-if="ScripHeaderData.Header.PRE_OPEN_I_PRICE_QTY != null && ScripHeaderData.Header.PRE_OPEN_I_PRICE_QTY != '' ">{{ScripHeaderData.Header.PRE_OPEN_I_PRICE_QTY}}<br /></span>
+                                        <span ng-if="ScripHeaderData.Header.PCAS_NO_BIDS != null && ScripHeaderData.Header.PCAS_NO_BIDS != '' ">{{ScripHeaderData.Header.PCAS_NO_BIDS}}<br /></span>
+                                        <span ng-if="ScripHeaderData.Header.PCAS_INDICATIVE_PRICE != null && ScripHeaderData.Header.PCAS_INDICATIVE_PRICE != '' ">{{ScripHeaderData.Header.PCAS_INDICATIVE_PRICE}}<br /></span>
+                                        <span ng-if="ScripHeaderData.Header.PCAS_INDICATIVE_QTY != null && ScripHeaderData.Header.PCAS_INDICATIVE_QTY != '' ">{{ScripHeaderData.Header.PCAS_INDICATIVE_QTY}}<br /></span>
+                                        <span ng-if="ScripHeaderData.Header.PERODIC_CALL_AUCTION != null && ScripHeaderData.Header.PERODIC_CALL_AUCTION != '' ">{{ScripHeaderData.Header.PERODIC_CALL_AUCTION}}<br /></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 text-right eqvaluefloat2">
+                                <div class="col-lg-12">{{ScripHeaderData.Header.Ason}}  |  All Prices in <img src="/include/images/rsicon.png" alt="" title="" border="0">&nbsp;&nbsp;<a href="#" onclick="location.reload(true);"><i class="fa fa-retweet iconfont"></i></a></div><br>
+                            </div>
+                        </div>
+                        <!--<div class="row">&nbsp;</div>-->
+
+
+
+
+                        <hr class="srmiddlehr" />
+
+                        <div class="row" style="padding-left:25px">
+                            <span ng-if="ScripHeaderData.Cmpname.EquityScrips=='0'" style="color:red;">No Equity Security Listed</span>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-8 sensexredtext">
+                                <div class="col-lg-12" ng-if="ScripHeaderData.Header.divremarks != null && ScripHeaderData.Header.divremarks != ''"><strong class="sensexredtext" id="divremarks" ng-if="ScripHeaderData.Header.divremarks != null && ScripHeaderData.Header.divremarks != ''" ng-bind-html="trustAsHtml(ScripHeaderData.Header.divremarks)"></strong></div>
+                                <div class="col-lg-12" ng-if="scripcode == 534091"> <a href="/D90/Header/MCXPopUp.html" target="_self"><strong class="blueheading">ONLY FIT AND PROPER PERSONS ARE ELIGIBLE TO DEAL IN THESE SHARES</strong></a></div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-fluid" style="background-color:#10486b">
+                    <div class="row">
+                        <ul class="stktab">
+
+                            <li style="display:inline-table" id="l1" class="{{Eclassbname}}" ng-show="isequity">
+                                <a href="{{Leftmenudata.EQSEOurl}}" style="color: #ffffff; font-size: 15px;" target="_self">Equity</a>
+
+                            </li>
+
+                            <li style="display:inline-table" id="l2" ng-show="Leftmenudata.showDeriv"><a href="{{LM_Deriv_url}}" style="color: #ffffff; font-size: 15px;" target="_self">Derivatives</a></li>
+                            <li style="display:inline-table" id="l3" ng-show="Leftmenudata.showDEBT && !Leftmenudata.showETF"><a href="{{LM_Debt_url}}" style="color: #ffffff; font-size: 15px;" target="_self">Debt</a></li>
+                            <li style="display:inline-table" id="l4" ng-show="Leftmenudata.showSLB"><a href="{{LM_SBL_url}}" style="color: #ffffff; font-size: 15px;" target="_self">SLB</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container-fluid" ng-init="fnStockTrading()">
+
+                    <div class="row">
+                        <div class="col-lg-12 text-right" style="margin-top:15px;">
+                            <a href="/markets/equity/EQReports/StockPrcHistori.aspx?expandable=7&scripcode={{scripcode}}&flag=sp&Submit=G" target="_self"><input type="button" value="Archives" style="width:80px; padding:4px 0px" class="btn btn-primary"></a>
+                            <input type="button" value="Add to Watch list" class="btn btn-primary" ng-click="OpenLoginWindow('AtoWL',scripcode)">
+                            <input type="button" value="Add to Portfolio" class="btn btn-primary" ng-click="OpenLoginWindow('AtoPF',scripcode)">
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-13">
+                            <div class=" whitebox">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td class="textsr">Previous Close</td>
+                                        <td class="textvalue">{{ScripHeaderData.Header.PrevClose}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Open</td>
+                                        <td class="textvalue">{{ScripHeaderData.Header.Open}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">High</td>
+                                        <td class="textvalue">{{ScripHeaderData.Header.High}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Low</td>
+                                        <td class="textvalue">{{ScripHeaderData.Header.Low}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">VWAP</td>
+                                        <td class="textvalue">{{StkTrading.WAP}}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-13" ng-init="fnPriceBand()">
+                            <div class="whitebox">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td class="textsr"><a style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#myModal3">52 Wk High</a></td>
+                                        <td class="textvalue">{{HLdata.Fifty2WkHigh_adj|number:2}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr"><a style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#myModal3">52 Wk Low</a></td>
+                                        <td class="textvalue">{{HLdata.Fifty2WkLow_adj|number:2}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Upper Price Band</td>
+                                        <td class="textvalue">{{PriceBand.UpperT}}({{PriceBand.PBpcUC}}%)</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Lower Price Band</td>
+                                        <td class="textvalue">{{PriceBand.LowerT}}({{PriceBand.PBpcLC}}%)</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">2W Avg Qty`{{StkTrading.TwoWkAvgQtyin}}</td>
+                                        <td class="textvalue">{{StkTrading.TwoWkAvgQty}}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-13">
+                            <div class="whitebox">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td class="textsr">TTQ {{StkTrading.TTQin}}</td>
+                                        <td class="textvalue">{{StkTrading.TTQ}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Turnover {{StkTrading.Turnoverin}}</td>
+                                        <td class="textvalue">{{StkTrading.Turnover}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Mcap Full (Cr.)</td>
+                                        <td class="textvalue">{{StkTrading.MktCapFull}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Mcap FF (Cr.)</td>
+                                        <td class="textvalue">{{StkTrading.MktCapFF}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Face Value</td>
+                                        <td class="textvalue">{{checknullheader(CompData.FaceVal)?'-':(CompData.FaceVal)}}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-13">
+                            <div class="whitebox">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td class="textsr">EPS (TTM) <a data-bs-toggle="modal" data-bs-target="#epsifo" class="social-icon" title="RSS"><img src="/include/images/iicon.png" alt="" title="" border="0" hspace="0" vspace="0"></a></td>
+                                        <td class="textvalue">{{checknullheader(CompData.EPS)?'-':(CompData.EPS)}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">CEPS (TTM)</td>
+                                        <td class="textvalue">{{checknullheader(CompData.CEPS)?'-':(CompData.CEPS)}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">PE</td>
+                                        <td class="textvalue">{{checknullheader(CompData.PE)?'-':(CompData.PE)}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">PB</td>
+                                        <td class="textvalue">{{checknullheader(CompData.PB)?'-':(CompData.PB)}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">ROE</td>
+                                        <td class="textvalue">{{checknullheader(CompData.ROE)?'-':(CompData.ROE)}}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-lg-13">
+                            <div class="whitebox">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td class="textsr">Category</td>
+                                        <td class="textvalue">{{ScripHeaderData.Header.Category}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Group / Settlement Type</td>
+                                        <td class="textvalue">{{CompData.Group}} /{{checknullheader(CompData.SetlType)?'-':(CompData.SetlType)}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Index</td>
+                                        <td class="textvalue">{{checknullheader(CompData.Index)?'-':(CompData.Index)}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">Industry<a data-bs-toggle="modal" ng-if="CompData.IShow=='1'" data-bs-target="#catinfo" class="social-icon" title="RSS"><img src="/include/images/iicon.png" alt="" title="" border="0" hspace="0" vspace="0"></a></td>
+                                        <td class="textvalue">{{CompData.Industry}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1px" colspan="2" bgcolor="#aeaeae"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="textsr">
+                                            <span ng-if="scripcode =='540526' || scripcode =='540565' || scripcode =='541300'">
+                                                Issue Price (Rs.)
+                                            </span><span ng-if="CompData.PAIDUP_VALUE!=null && CompData.PAIDUP_VALUE!=''">
+                                                Paid-up Value
+                                            </span>
+                                            <span ng-if="!checknullheader(ScripHeaderData.Header.NAVRate)">
+                                                i-NAV
+                                            </span>
+                                        </td>
+                                        <td class="textvalue">
+                                            <span ng-if="scripcode=='540526'">
+                                                102
+                                            </span>
+                                            <span ng-if="scripcode=='540565'">
+                                                100
+                                            </span>
+                                            <span ng-if="scripcode=='541300'">
+                                                100
+                                            </span>
+                                            <span ng-if="CompData.PAIDUP_VALUE!=null && CompData.PAIDUP_VALUE!=''">
+                                                {{CompData.PAIDUP_VALUE}}
+                                            </span>
+                                            <span ng-if="!checknullheader(ScripHeaderData.Header.NAVRate)">
+                                                {{ScripHeaderData.Header.NAVRate}}
+                                            </span>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Comman Header End-->
+                <div class="container-fluid">
+                    <div class="row">
+
+                    </div>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <!--Left menu start-->
+                    <aside id="idaside" class="sidebar perfectScrollbar ">
+                        <!--<div id="solso-sidebar" ng-include="'/D90/Header/SRLeftMenu.html'"></div>-->
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+
+                            <!--<div class="panel panel-default">
+                    <div id="l1" class="panel panel-default" onclick="NewLeftMenu(1,'')">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h1 class="panel-title">
+                                <a href="{{Leftmenudata.EQSEOurl}}" class="single-item">
+                                    Equity
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default" ng-show="Leftmenudata.showDeriv">
+                    <div id="l2" class="panel panel-default" onclick="NewLeftMenu(2,'')">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h1 class="panel-title">
+                                <a href="{{LM_Deriv_url}}" class="single-item">
+                                    Derivatives
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default" ng-show="Leftmenudata.showDEBT && !Leftmenudata.showETF">
+                    <div id="l3" class="panel panel-default" onclick="NewLeftMenu(3,'')">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h1 class="panel-title">
+                                <a href="{{LM_Debt_url}}" class="single-item">
+                                    Debt / Others
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default" ng-show="Leftmenudata.showSLB">
+                    <div id="l4" class="panel panel-default" onclick="NewLeftMenu(4,'')">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h1 class="panel-title">
+                                <a href="{{LM_SBL_url}}" class="single-item">
+                                    SLB
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>-->
+
+                            <div class="panel panel-default">
+                                <div id="l5" class="panel panel-default" onclick="NewLeftMenu(5,'')">
+                                    <div class="panel-heading" role="tab" id="heading1">
+                                        <h1 class="panel-title">
+                                            <a target="_blank" href="{{LM_CropAnn_url}}" class="single-item">
+                                                Corp Announcements
+                                            </a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="l6" class="panel panel-default" ng-show="!Leftmenudata.showETF">
+                                <div class="panel-heading" role="tab" id="heading2" onclick="displaymenu('afi');">
+                                    <h1 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" id="afi" aria-expanded="true" aria-controls="collapse2">
+                                            Financials
+                                            <i class="pull-right fa fa-caret-down"></i>
+                                        </a>
+                                    </h1>
+                                </div>
+
+                                <div id="collapse2" class="panel-collapse collapse" style="display:none" role="tabpanel" aria-labelledby="heading2">
+                                    <div>
+                                        <!--<div><a onclick="NewLeftMenu(61, 'afi')" id="l61" href="{{LM_FinReport_url}}" class="list-group-item">Results</a></div>-->
+                                        <div><a onclick="NewLeftMenu(61, 'afi')" id="l61" href="{{(Leftmenudata.SpecialResults)?(LM_FinRepSpecial_url):(LM_FinReport_url)}}" class="list-group-item">Results</a></div>
+                                        <div class="">
+                                            <a onclick="NewLeftMenu(62, 'afi')" id="l62" href="{{LM_FinAnnRepot_url}}" class="list-group-item">Annual Reports</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="l7" class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading3" onclick="displaymenu('ame');">
+                                    <h1 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" id="ame" aria-expanded="true" aria-controls="collapse3">
+                                            Meetings
+                                            <i class="pull-right fa fa-caret-down"></i>
+                                        </a>
+                                    </h1>
+                                </div>
+
+                                <div id="collapse3" class="panel-collapse collapse" style="display:none" role="tabpanel" aria-labelledby="heading3">
+                                    <div>
+                                        <div><a onclick="NewLeftMenu(71, 'ame')" id="l71" href="{{LM_MBM_url}}" class="list-group-item">Board Meetings</a></div>
+                                        <div><a onclick="NewLeftMenu(72, 'ame')" id="l72" href="{{LM_MSM_url}}" class="list-group-item">Shareholders Meetings</a></div>
+                                        <div><a onclick="NewLeftMenu(73, 'ame')" id="l73" href="{{LM_MVR_url}}" class="list-group-item">Voting Results</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div id="l8" class="panel panel-default" onclick="NewLeftMenu(8,'')">
+                                        <div class="panel-heading" role="tab" id="heading1">
+                                            <h1 class="panel-title">
+                                                <a href="{{LM_CropAct_url}}" class="single-item">
+                                                    Corp Actions
+                                                </a>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default" ng-show="!Leftmenudata.showETF" ng-init="fnLeftmenu()">
+                                    <div id="l9" class="panel panel-default" ng-show="!Leftmenudata.showINVIT" onclick="NewLeftMenu(9,'')">
+
+                                        <div class="panel-heading" role="tab" id="heading1">
+                                            <h1 class="panel-title">
+
+                                                <a href="{{LM_latestShaPat_url}}" class="single-item">
+                                                    Shareholding Pattern
+                                                </a>
+                                            </h1>
+                                        </div>
+                                    </div>
+
+                                    <div id="l22" class="panel panel-default" ng-show="Leftmenudata.showINVIT" onclick="NewLeftMenu(22,'')">
+                                        <div class="panel-heading" role="tab" id="heading1">
+                                            <h1 class="panel-title">
+                                                <a href="{{LM_ShaUnitPat_url}}" class="single-item">
+                                                    Unit Holding Pattern
+                                                </a>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div id="l10" class="panel panel-default" onclick="NewLeftMenu(10,'')">
+                                        <div class="panel-heading" role="tab" id="heading1">
+                                            <h1 class="panel-title">
+                                                <a href="{{LM_CropGov_url}}" class="single-item">
+                                                    Corporate Governance
+                                                </a>
+
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div id="l101" class="panel panel-default" onclick="NewLeftMenu(101,'')">
+                                        <div class="panel-heading" role="tab" id="heading1">
+                                            <h1 class="panel-title">
+                                                <a href="{{LM_InvComplaints_url}}" class="single-item">
+                                                    Statement of investor complaints
+                                                </a>
+
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div id="l102" class="panel panel-default" onclick="NewLeftMenu(102,'')">
+                                        <div class="panel-heading" role="tab" id="heading1">
+                                            <h1 class="panel-title">
+                                                <a href="{{LM_Party_Transactions_url}}" class="single-item">
+                                                    Related Party Transactions
+                                                </a>
+
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div id="l103" class="panel panel-default" onclick="NewLeftMenu(103,'')">
+                                        <div class="panel-heading" role="tab" id="heading1">
+                                            <h1 class="panel-title">
+                                                <a href="{{LM_brsr}}" class="single-item">
+                                                    BRSR
+                                                </a>
+
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default" ng-show="!Leftmenudata.showETF">
+                                    <div id="l11" class="panel panel-default" onclick="NewLeftMenu(11,'')">
+                                        <div class="panel-heading" role="tab" id="heading1">
+                                            <h1 class="panel-title">
+                                                <a href="{{LM_Bulkblk_url}}" class="single-item">
+                                                    Bulk /  Block deals
+                                                </a>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="l12" class="panel panel-default" ng-show="!Leftmenudata.showETF">
+                                    <div class="panel-heading" role="tab" id="heading4" onclick="displaymenu('adi');">
+                                        <h1 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" id="adi" aria-expanded="true" aria-controls="collapse4">
+                                                Disclosures
+                                                <i class="pull-right fa fa-caret-down"></i>
+                                            </a>
+                                        </h1>
+                                    </div>
+
+                                    <div id="collapse4" class="panel-collapse collapse" style="display:none" role="tabpanel" aria-labelledby="heading4">
+                                        <div>
+                                            <div><a onclick="NewLeftMenu(121, 'adi')" id="l121" href="{{LM_DisIT2015_url}}" class="list-group-item">Insider Trading 2015</a></div>
+                                            <div><a onclick="NewLeftMenu(122, 'adi')" id="l122" href="{{LM_DisIT1992_url}}" class="list-group-item">Insider Trading 1992</a></div>
+                                            <div><a onclick="NewLeftMenu(123, 'adi')" id="l123" href="{{LM_DisSAST_url}}" class="list-group-item">SAST</a></div>
+                                            <!--<div><a onclick="NewLeftMenu(132, 'adi')" id="l132" href="{{LM_DisSASTPIT_url}}" class="list-group-item">SDD-PIT</a></div>-->
+                                            <div><a onclick="NewLeftMenu(131, 'adi')" id="l131" href="{{LM_DisSAST31_url}}" class="list-group-item">SAST â Disclosure 31(4) </a></div>
+                                            <div><a onclick="NewLeftMenu(124, 'adi')" id="l124" href="{{LM_DisPle_url}}" class="list-group-item" target="_blank">Pledge</a></div>
+                                            <div><a onclick="NewLeftMenu(127, 'adi')" id="l127" href="{{LM_encumbrance_url}}" class="list-group-item" target="_blank">Reasons for Encumbrance</a></div>
+                                            <div><a onclick="NewLeftMenu(125, 'adi')" id="l125" href="{{LM_DisSASTAnn_url}}" class="list-group-item" target="_blank">SAST - Annual Disclosure</a></div>
+                                            <div><a onclick="NewLeftMenu(126, 'adi')" id="l126" href="{{LM_DisCPD_url}}" class="list-group-item">Consolidated Pledge Data</a></div>
+                                            <div><a onclick="NewLeftMenu(128, 'adi')" id="l128" href="{{LM_DisSSP_url}}" class="list-group-item">SDD SAST Promoter</a></div>
+                                            <div><a onclick="NewLeftMenu(129, 'adi')" id="l129" href="{{LM_DisSSNP_url}}" class="list-group-item">SDD SAST Non Promoter</a></div>
+                                            <div><a onclick="NewLeftMenu(130, 'adi')" id="l130" href="{{LM_DisSSPL_url}}" class="list-group-item">SDD SAST Pledge</a></div>
+                                        </div>
+                                    </div>
+
+                                    <!--<div class="panel-heading" role="tab" id="heading4" onclick="displaymenu('mfp');">
+                                        <h1 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" id="adi" aria-expanded="true" aria-controls="collapse4">
+                                                MF PIT Disclosures
+                                                <i class="pull-right fa fa-caret-down"></i>
+                                            </a>
+                                        </h1>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse" style="display:none" role="tabpanel" aria-labelledby="heading5">
+                                        <div>
+                                            <div><a onclick="NewLeftMenu(221, 'mfp')" id="l121" href="{{LM_MFUPSI_url}}" class="list-group-item">UPSI</a></div>
+                                            <div><a onclick="NewLeftMenu(222, 'mfp')" id="l122" href="{{LM_MFOMT_url}}" class="list-group-item">Off market transaction â Reg 5D(1) (i)</a></div>
+                                            <div><a onclick="NewLeftMenu(223, 'mfp')" id="l123" href="{{LM_MFTP_url}}" class="list-group-item">Trading Plan â Reg 5D(1)(iv)</a></div>
+                                            <div><a onclick="NewLeftMenu(231, 'mfp')" id="l123" href="{{LM_MFQDR_url}}" class="list-group-item">Quarterly Disclosures - Reg 5E (1) - RTA </a></div>
+                                            <div><a onclick="NewLeftMenu(224, 'mfp')" id="l124" href="{{LM_MFEBD_url}}" class="list-group-item">Event Based Disclosures â Reg 5E (2) - RTA</a></div>
+                                        </div>
+                                    </div>-->
+
+                                    <div class="panel panel-default">
+                                        <div id="l13" class="panel panel-default" onclick="NewLeftMenu(13,'')">
+                                            <div class="panel-heading" role="tab" id="heading1">
+                                                <h1 class="panel-title">
+                                                    <a href="{{LM_Cropinfo_url}}" class="single-item">
+                                                        Corp Information
+                                                    </a>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div id="l14" class="panel panel-default" onclick="NewLeftMenu(14,'')">
+                                            <div class="panel-heading" role="tab" id="heading1">
+                                                <h1 class="panel-title">
+                                                    <a href="{{LM_PeerGrp_url}}" class="single-item">
+                                                        Peer Group
+                                                    </a>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div id="l15" class="panel panel-default" onclick="NewLeftMenu(15,'')">
+                                            <div class="panel-heading" role="tab" id="heading1">
+                                                <h1 class="panel-title">
+                                                    <a href="{{LM_Charting_url}}" target="_blank" class="single-item">
+                                                        Charting
+                                                    </a>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default" ng-show="Leftmenudata.showRPT">
+                                        <div id="l16" class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="heading1" onclick="NewLeftMenu(16,'')">
+                                                <h1 class="panel-title">
+                                                    <a href="{{LM_Research_url}}" class="single-item">
+                                                        Research Reports
+                                                    </a>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div id="l17" class="panel panel-default" onclick="NewLeftMenu(17,'')">
+                                            <div class="panel-heading" role="tab" id="heading1">
+                                                <h1 class="panel-title">
+                                                    <a href="{{LM_Notice_url}}" class="single-item" target="_blank">
+                                                        Notices
+                                                    </a>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default" ng-show="Leftmenudata.showINVIT">
+                                        <div id="l18" class="panel panel-default" onclick="NewLeftMenu(18,'')">
+                                            <div class="panel-heading" role="tab" id="heading1">
+                                                <h1 class="panel-title">
+                                                    <a href="{{LM_Invit_url}}" class="single-item">
+                                                        Additional  Info
+                                                    </a>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!--Left menu end-->
+                    <div id="fontSize">
+                        <div id="divmain" class="body ">
+                            <ng-view id="deribody">
+
+
+                            </ng-view>
+                            <div class="middlefoot"></div>
+
+                            <footer class="footerarea" ng-include="'/footer.aspx'"></footer>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="D90/Angular/angular-sanitize.latest.js?v=2"></script>
+        <script src="include/js/jquery.ui.touch-punch.min.js"></script>
+        <script src="include/js/amcharts_new.js"></script>
+        <script src="include/js/serial.js"></script>
+        <script src="include/js/amstock.js"></script>
+        <script src="include/js/light.js"></script>
+
+        <script>
+            document.write("<script type='text/javascript' src='include/js/bootstrap.min.js?v1=" + version_js + "'><\/script>");
+        </script>
+        <script src="include/js/jquery.bootstrap-responsive-tabs.min.js"></script>
+        <script src="D90/Angular/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+        <script type="text/javascript">
+            function loadJS(x) { console.log(x); var tag = document.createElement("script"); tag.src = x; document.getElementsByTagName("body")[0].appendChild(tag); }
+            function loadSentifyJS(x) { console.log(x); var tag = document.createElement("script"); tag.src = x; tag.setAttribute("data-sfinfinite-scroll", 1); document.getElementsByTagName("body")[0].appendChild(tag); }
+            //dom content loaded
+            function postDomContentLoadedFunction(n) { return void 0 !== window.attachEvent ? window.attachEvent("DOMContentLoaded", n) : window.addEventListener ? window.addEventListener("DOMContentLoaded", n, !1) : void 0 }
+            function postLoadFunction(a) { if ("undefined" != typeof (window.attachEvent)) { return window.attachEvent("onload", a) } else { if (window.addEventListener) { return window.addEventListener("load", a, false) } } };
+        </script>
+
+        <script type="text/javascript">
+            function loadThirdPartyJS() {
+                //SENTIFIJS = "https://cdn-pub.sentifi.com/custo/widgets.js";
+                //loadSentifyJS(SENTIFIJS);
+
+                MOJOJS = "https://j.marketsmojo.com/bse_widget.js";
+                loadJS(MOJOJS);
+            }
+
+            function loadgoogleads() {
+                googleadjs = "https://www.googletagservices.com/tag/js/gpt.js";
+                loadJS(googleadjs);
+
+                console.log("first slot");
+                googletag.cmd.push(function () {
+                    googletag.defineSlot("/35735749/Getquote_Top", [[728, 90], [234, 60], [300, 100], [970, 90]], 'div-gpt-ad-1565080708958-0').addService(googletag.pubads());
+                    googletag.pubads().enableSingleRequest();
+                    googletag.enableServices();
+                });
+
+                googletag.cmd.push(function () {
+                    googletag.defineSlot('/35735749/Getquote_SQ', [300, 250], 'div-gpt-ad-1549533989657-0').addService(googletag.pubads());
+                    googletag.pubads().enableSingleRequest();
+                    googletag.enableServices();
+                });
+
+
+                googletag.cmd.push(function () { googletag.display("div-gpt-ad-1565080708958-0"); });
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1549533989657-0'); });
+
+            }
+
+        </script>
+
+        <script>
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            var param = [strArray[4], "fin_trend"];
+            loadThirdPartyJS();
+            loadgoogleads();
+        </script>
+
+        <script>
+            document.write("<script type='text/javascript' src='D90/Controller/AppnewController.js?v1=" + version_cntroller + "'><\/script>");
+            document.write("<script type='text/javascript' src='include/js/eqgetquote_stk.js?v1=" + version_js + "'><\/script>");
+            document.write("<script type='text/javascript' src='include/js/derivative_stk.js?v1=" + version_js + "'><\/script>");
+            document.write("<script type='text/javascript' src='include/js/debt_stk.js?v1=" + version_js + "'><\/script>");
+            document.write("<script type='text/javascript' src='D90/Controller/newgetqouteController.js?v2=" + version_cntroller + "'><\/script>");
+        </script>
+        <!--<script type="text/javascript" language="javascript">
+        document.body.onload = function () {
+
+            $("#l1").removeClass("dropdown mega-dropdown default");
+            $("#l1").addClass("dropdown mega-dropdown landingsec");
+
+        };
+    </script>-->
+
+</body>
+</html>
