@@ -1,0 +1,291 @@
+.ValuationPage {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-left :60px
+  }
+  
+  .ValuationPageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: -140px;
+  }
+  
+  .ValuationPageInfo {
+    text-align: right;
+    color: #aaa;
+  }
+  .searchArea {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchInput {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    background-color: #fff;
+    flex-grow: 1;
+  }
+  
+  .searchButton {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .searchIconImage {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .advancedSearch1, .advancedSearch2 {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px; /* Adjust space between buttons */
+    margin-top: 0; /* Adjust top margin as needed */
+}
+
+.searchArea {
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: space-between; /* Space between search and buttons */
+  }
+
+  .searchArea2 {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    background-color: #333; /* Adjust the color to match your theme */
+    padding: 10px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    margin-left:300px;
+    margin-top:-50px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 10px; /* Space between search input and buttons */
+  }
+  
+  .searchInput {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+  }
+  
+  .searchButton {
+    background: transparent;
+    border: none;
+    padding: 10px;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+  }
+  
+  .advancedSearch,
+.customTransactionButton {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px; /* Space between buttons */
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.advancedSearch {
+  background-color: #fff;
+  color: #333;
+}
+
+.customTransactionButton {
+  background-color: #666; /* Darker shade for the button */
+  color: white;
+}
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    /* border: 1px solid #fff; or any color as per your theme */
+    text-align: left;
+  }
+  
+  .table-heading {
+    font-weight: bold;
+    background-color: #333; /* or any dark shade for the heading row */
+    color: #fff;
+  }
+  
+  /* Remove any specific alignment for numerical values if you want everything centered */
+  .fixedButtonContainer {
+    position: fixed; /* Fixed position to stick at the bottom */
+    left: 50%; /* Centering the button */
+    transform: translateX(-50%); /* Align center properly */
+    bottom: 20px; /* Distance from the bottom */
+    text-align: center;
+    margin-left: 600px; /* Ensure text inside the div is centered (affects the button) */
+  }
+  
+  .businessPlanButton {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid black; /* Button border */
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Top and bottom padding then left and right padding */
+    font-size: 14px; /* Text size */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    font-weight: bold; /* Make the text bold */
+    outline: none; /* Remove the outline to avoid box appearance on click */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Ensure the button does not fill the entire container */
+  }
+
+  .fixedButtonContainer1 {
+    position: fixed; /* Fixed position to stick at the bottom */
+    left: 50%; /* Centering the button */
+    transform: translateX(-50%); /* Align center properly */
+    bottom: 20px; /* Distance from the bottom */
+    text-align: center;
+    margin-left: -475px; /* Ensure text inside the div is centered (affects the button) */
+  }
+  
+  .businessPlanButton1 {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    border: 1px solid black; /* Button border */
+    border-radius: 20px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Top and bottom padding then left and right padding */
+    font-size: 14px; /* Text size */
+    cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for button */
+    font-weight: bold; /* Make the text bold */
+    outline: none; /* Remove the outline to avoid box appearance on click */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Ensure the button does not fill the entire container */
+  }
+  
+  .businessPlanButton:hover {
+    background-color: #f8f8f8; /* Slightly darker background on hover */
+  }
+    
+/* .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+} */
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-container {
+    display: flex;
+    align-items: center; /* Keep items vertically aligned */
+    justify-content: flex-end; /* Align content to the right edge */
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+
+.toggle-label-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between the labels and the toggle */
+  width: 100%; /* Take up the full width of the parent container */
+}
+
+.toggle-label-left {
+  color: white;
+  font-size: 0.9em;
+  /* Positioned to the left */
+}
+
+.toggle-label-right {
+  color: white;
+  font-size: 0.9em;
+  /* Positioned to the right */
+}
+
+.toggle-switch {
+  position: relative;
+  width: 50px; /* Width of the toggle switch */
+  height: 24px; /* Height of the toggle switch */
+  /* Removed margin as it's not needed with space-between */
+}
+
+/* Other styles remain the same */
+
+/* Other styles remain the same */
+
+  
+  .toggle-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+    
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    
+  }
+  
+  .toggle-checkbox:checked + .toggle-slider {
+    background-color: #2196F3;
+  }
+  
+  .toggle-checkbox:checked + .toggle-slider:before {
+    transform: translateX(26px);
+  }
+  

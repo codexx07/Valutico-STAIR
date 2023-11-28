@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import './Transactions.css';
-import searchIcon from '../src/assets/Search.png';
+import searchIcon from '../src/assets/searchlogo.png';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
